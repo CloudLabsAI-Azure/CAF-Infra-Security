@@ -29,7 +29,7 @@ In this task, you'll explore Azure Monitor and examine the resource health of va
 
 1. From the sidebar, select **Networks** from Insights.
 
-   ![](images/a4.png "search gateway")
+   ![](images/infra-app-june-4.png "search gateway")
    
 1. On the **Network health** tab, you can customize the resource health and alerts view using filters such as **Subscription**, **Resource Group**, and **Type**. You can also use the search box to find resources and their associated resources. For example, a public IP may be associated with an application gateway. A search for the public IP's DNS name will return both the public IP and the associated application gateway.
 
@@ -49,7 +49,7 @@ In this task, you'll explore Azure Monitor and examine the resource health of va
      
 1. You will see the **Metrics** as given below:
 
-    ![](images/a13.png "search gateway")
+    ![](images/infra-app-june-5.png "search gateway")
 
 ## Task 2: Network Topology
 
@@ -61,7 +61,7 @@ In this task, you'll explore Azure Monitor and examine the resource health of va
 
 1. From the sidebar, select **Topology** from Monitoring.
 
-   ![](images/cafinfa2.jpg "search gateway")
+   ![](images/infra-app-june-6.png "search gateway")
 
 1. On the **Topology** page, click on the **Scope** **(1)**.
 
@@ -77,7 +77,7 @@ In this task, you'll explore Azure Monitor and examine the resource health of va
 
 1. Now, you'll be able to **Visualize (1)** the topology. You can explore the different connections to understand how different resources, such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
 
-   ![](images/scafinfra37.jpg "search gateway")
+   ![](images/infra-app-june-7.png "search gateway")
 
 ## Task 3: Secure Access via Bastion Host
 
@@ -103,13 +103,13 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
    ![](images/a18.png "search gateway")
 
-1. Select the **JumpVM-<inject key="DeploymentID" enableCopy="false" />** from the list.
+1. Select the **FirewallVM** from the list.
 
-   ![](images/E1T3S6.png "search gateway")
+   ![](images/infra-app-june-8.png "search gateway")
 
 1. On the Virtual Machine page, click on **Connect (1)** under **Connect** and then click on **Go to Bastion (2)**.
  
-   ![](images/connect-1.png)
+   ![](images/infra-app-june-9.png)
  
 1. On the Bastion page, follow the instructions below to connect to the Virtual Machine using Bastion:
 
@@ -121,11 +121,11 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
     
     - Click on **Connect (4)**
  
-      ![](images/bastionconnect-1.png)
+      ![](images/infra-app-june-10.png)
 
       >**Note:** If the Connection is blocked by the browser, click on the **Pop-up (1)** button, select **Always allow pop-ups and redirects from https://portal.azure.com (2)** and then click on **Done (3)**.
 
-       ![](images/unblock-redirects.png)
+       ![](images/new-unblock-redirects.png)
  
 1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
  
@@ -147,9 +147,9 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
     ![](images/cafinfra6.jpg)
 
-1. From the list of resources, select the Network Security Group named **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
+1. From the list of resources, select the Network Security Group named **FirewallVM-nsg**.
 
-    ![](images/cafinfra7.jpg)
+    ![](images/infra-app-june-11.png)
 
 1. Under **Monitoring** section, select **NSG flow logs (1)** blade and Click on **+ Create (2)** button.
 
@@ -159,25 +159,25 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
     ![](images/E1T4S6.png)
 
-1. In the Select network security group page, select **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg** **(1)** and click on **Confirm selection (2)**.
+1. In the Select network security group page, select **FirewallVM-nsg** **(1)** and click on **Confirm selection (2)**.
 
-    ![](images/E1T4S7.png)
+    ![](images/infra-app-june-12.png)
 
 1. For the Instance details, provide the following details and click on **Next: Analytics > (4)**
 
-   - **Subscription:** select **default subscription (1)** from the drop-down.
+   - **Subscription:** Keep the **default subscription (1)**.
 
    - **Storage Account:** select **nsglogs<inject key="DeploymentID" enableCopy="false" />** from the drop down.
 
    - **Retention (days):** **30 (3)**
 
-       ![](images/E1T4S8.png)  
+       ![](images/infra-app-june-013.png)  
    
 1. Under the **Analytics** tab, check the box to **Enable traffic analytics (1)**, select **Every 10 mins (2)** under the Traffic analytics processing interval and click **Review + create (3)**.
 
     ![create](images/a149-1.png)
 
-1. On the Review + create tab, review the summary and click on **Create** button.
+1. On the **Review + create** tab, review the summary and click on **Create** button.
 
    >**Note:** The deployment might take a few minutes to complete. Wait till the deployment is completed before proceeding to the next step.
 
@@ -191,13 +191,13 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
     ![](images/cafinfra6.jpg)
 
-1. From the list of resources, select the Network security group named **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
+1. From the list of resources, select the Network security group named **FirewallVM-nsg**.
 
-    ![](images/cafinfra7.jpg)
+    ![](images/infra-app-june-11.png)
 
 1. From the sidebar, select **Diagnostic settings (1)** under monitoring and click on **+ Add diagnostic setting (2)**.
 
-    ![](images/cafinfra15.jpg)
+    ![](images/infra-app-june-14.png)
 
 1. In the Diagnostic settings page, provide the following details.
 
