@@ -42,7 +42,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
 
     - **Target type**: Select **Virtual Machine (1)** from the drop-down.
 
-    - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
+    - **Target**: Select **FirewallVM-nic (2)** from drop-down.
 
     - Click on **Save (3)**.
 
