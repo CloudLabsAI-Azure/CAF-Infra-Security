@@ -317,7 +317,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
 
     ![](images/a61.png)
    
-    ![](images/a65.png)
+    ![](images/upd-022.png)
   
 ### Task 5.2: View Azure Front Door in action
   

@@ -97,7 +97,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 1. You will see that **AzureBastionSubnet** is already present in the subnets. If you want to see the subnet configuration, then you can click on the AzureBastionSubnet subnet and explore this.
 
-   ![](images/E1T3S4.png "search gateway")
+   ![](images/upd-021.png "search gateway")
 
 1. Now, using the search bar, search for **Virtual machines (1)** and **select (2)** from the suggestions.
 

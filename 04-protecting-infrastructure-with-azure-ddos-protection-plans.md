@@ -46,11 +46,11 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
    - Name: Enter **DDoSprotection (3)**.
 
-   - Region: **<inject key="Region" />**
+   - Region: **<inject key="Region" /> (4)**
 
-   - Click on **Next : Tags > (4)**.
+   - Click on **Next : Tags > (5)**.
  
-     ![](images/upd-09.png)
+     ![](images/upd-024.png)
  
 1. On the **Tags** tab, leave everything to default and then click on **Review + create**.
  
@@ -115,7 +115,7 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
 1. In the **Overview** pane, you will see **Protect IP address** on the bottom right corner, click on **Protect**.
 
-    ![](images/a35.png)
+    ![](images/upd-025.png)
 
 1. Once you click on **Protect**, under **Protection type**, select **IP** and click on **Save**.
 
@@ -123,7 +123,7 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
 1. In the **Overview (1)** pane, select the **Properties (2)** tab. Under **DDoS protection (3)**, you will see that your public IP address is protected by **IP protection** as shown below.
 
-    ![](images/upd-39.png)
+    ![](images/upd-026.png)
     
 ## Task 3: View metrics from Public IP address
 

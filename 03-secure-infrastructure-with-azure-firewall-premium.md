@@ -553,7 +553,7 @@ In this task, you will create an application rule to allow access to sports webs
     | Region           | Select **East US (3)**                                       |
     | Policy tier      | Select **Standard (4)**                                      |
  
-     ![](images/upd-28.png)
+     ![](images/upd-023.png)
  
 1. On the **DNS Settings** tab, leave it as default and click on **Next : TLS inspection >**.
  
