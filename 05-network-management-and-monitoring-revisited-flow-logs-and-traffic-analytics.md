@@ -26,39 +26,39 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
  1. Select your **Application Gateway**.
  
-     ![](images/appgateway.png "select gateway")
+     ![](images/upd-40.png "select gateway")
  
  1. Select the **Frontend public IP address** of the application gateway.
  
-     ![](images/E5T2S3.png "select gateway")
+     ![](images/upd-41.png "select gateway")
   
  1. Copy the **Public IP address** and save it to Notepad for later use.
 
-     ![](images/E5T2S4.png )
+     ![](images/upd-42.png )
 
  1. To test the application, copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab and generate some traffic by refreshing the browser.
  
-     ![](images/image307.png)
+     ![](images/upd-43.png)
 
       > **Note**: You will see that your website is running. If the website is not running, make sure the firewall policy of the application gateway is in detection mode.
 
-    ![](images/E5T2S5.png)
+    ![](images/upd-44.png)
 
 1. Navigate to the resource group **JumpVM-rg**, and from the **Overview** tab, select **AzureFirewall**.
 
-   ![loadbalancer](images1/firewall.png)
+   ![loadbalancer](images/upd-45.png)
    
 1. Select **Firewall public IP** from the Overview tab.
 
-    ![pip](images1/firewallIP.png)
+    ![pip](images/upd-46.png)
     
 1. Copy the IP address and save it in a text editor.
 
-    ![ip](images1/firewallip1.png)
+    ![ip](images/upd-47.png)
       
 1. Navigate to the Firewall's public IP address and refresh the page multiple times to generate some traffic.
 
-   ![pip](images/a32.png)
+   ![pip](images/upd-48.png)
 
 1. In the Azure portal, search for **Network Watcher** and select it.
 
@@ -70,7 +70,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
       
 1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
 
-   ![time interval](images/flows.png)
+   ![time interval](images/upd-49.png)
    
    > **Note: If you observe the Time interval is greyed out, click on Meanwhile, click here to see just resource data and perform the above step**.
    
@@ -80,7 +80,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
       
 1. Now, you can observe the total number of network traffic flows from **Traffic Visualization** present in the **Traffic Analytics** page.
 
-    ![traffic visualization](images1/traffic%20visualisation.png)
+    ![traffic visualization](images/upd-013.png)
 
     > **Note: The dashboard may take up to 60-90 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and come back later and check on this**.
            
@@ -108,19 +108,19 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
       
 1. Under the Traffic Analytics page, scroll down to **Traffic Distribution** to view the analytics of traffic flows across the host, subnet, VNet, and VMSS.
 
-    ![tr](images1/totaltraffic.png)
+    ![tr](images/upd-015.png)
      
 1. To view the analytics of traffic flows across the host, select **IP (1)**, then select **See all (2)** from **Traffic Distribution**.
 
-    ![td](images1/ipsee.png)
+    ![td](images/upd-016.png)
     
 1. You can observe the graph of the **Time trending chart for the top 5 talking IPs** from the **Traffic distribution across the top IPs** page.
 
-    ![see more](images1/trafficdistri.png)
+    ![see more](images/upd-017.png)
     
 1. Under **Details of top 5 talking IPs**, select VM IP to explore more about traffic distribution.
 
-     ![see more](images1/top5.png)
+     ![see more](images/upd-018.png)
      
 1. Close the **Traffic distribution across top IPs** by clicking the **cross (X) icon** at the top-left corner of the page.
     
@@ -128,11 +128,11 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
 1. Now scroll down to **Application ports**, to view analytics for application ports utilized across your environment and select **See all**.
 
-    ![ap](images1/applicationports.png)
+    ![ap](images/upd-019.png)
      
 1. From the **Most frequent L7 protocols** page, you can explore more about the ports and their ranging.
 
-    ![l7](images1/l7proto.png)
+    ![l7](images/upd-020.png)
 
 ## Summary
  
