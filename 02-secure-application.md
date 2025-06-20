@@ -32,7 +32,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
     
  1. Select your **Application Gateway**.
 
-      ![](images/appgateway.png "select gateway")
+      ![](images/E2T1S2.png "select gateway")
       
  1. On the Application gateway page, click on the **Backend pools (1)** under **Settings** and then select **AGBackendtarget (2)**.
 
@@ -58,7 +58,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
  
 1. On the Web Application Firewall page, click on **Firewall policy**, then navigate to the **Settings** section and select **Associated application gateways**.
 
-   ![](images1/firewallpolicy.png)
+   ![](images/E2T1S7.png)
      
 1. On the **Associated application gateways** page, click on **+ Add association (1)** and select **Application Gateway (2)**
 
@@ -84,11 +84,11 @@ In this task, you will access the application by going through the Application G
 
 1.  In the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
  
-     ![](images/searchgateway.png "search gateway")
+     ![](images/E2T1S2.png "search gateway")
  
 1. Select your **Application Gateway**.
  
-     ![](images/appgateway.png "select gateway")
+     ![](images/E2T1S3.png "select gateway")
  
 1. Select the **Frontend public IP address** of the application gateway.
  
@@ -96,7 +96,7 @@ In this task, you will access the application by going through the Application G
 
 1.  Copy the **IP address** and save it to Notepad for later use.
 
-     ![](images/editing12.png )
+     ![](images/E2T2S4.png )
           
 1. Now, to test the application copy and paste the Frontend public IP address of **Application Gateway** into a new browser tab that you copied in previous step.
 
@@ -112,7 +112,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
  
 1. On the **Compute Infrastructure | Virtual machines page**, select **labvm-<inject key="Deployment ID" enableCopy="false"/>**.
 
-    ![](images/updateimg-15.png "select gateway")
+    ![](images/E2T3S2.png "select gateway")
 
 1. Copy the **Public IP address** and save it to Notepad for later use.
 
@@ -154,7 +154,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
 1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
      
-   ![rp](images1/rgappgateway.png)
+   ![rp](images/E2T3S10.png)
     
 1. Under the **Application gateway** page, follow the details below:
 
@@ -162,13 +162,13 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
      
     - Click on **firewallpolicy (2)** under **Associated web application firewall policy**.  
   
-      ![config](images1/webappfirewall.png)
+      ![config](images/E2T3S11.png)
  
 1. On the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
 
    >**Note:** Wait for the firewall policy to get updated before proceeding to the next step.
  
-    ![](images1/switchtoprevention.png)
+    ![](images/E2T4S5.png)
 
 1. Navigate back to the browser tab where you accessed the application gateway website and **refresh** the tab; you will no longer be able to see the website.
 
@@ -178,7 +178,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
 1. Navigate back to **firewallpolicy** page, go to the **Overview (1)** blade and click on **Switch to detection mode (2)**.
 
-   ![](images/a161.png "select gateway")
+   ![](images/E2T3S14.png "select gateway")
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -207,7 +207,7 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
   
 1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
      
-    ![rp](images1/rgappgateway.png)
+    ![rp](images/E2T3S10.png)
     
 1. On the **Application gateway** page, follow the details below:
 
@@ -215,13 +215,13 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
      
     - Click on **firewallpolicy (2)** under **Associated web application firewall policy**.  
   
-      ![config](images1/webappfirewall.png)
+      ![config](images/E2T3S11.png)
  
 1. On the **firewallpolicy** page, go to the **Overview (1)** blade and click on **Switch to prevention mode (2)**.
 
      >**Note:** Wait for the firewall policy to get updated before proceeding to the next step.
 
-    ![](images1/switchtoprevention.png)
+    ![](images/E2T4S5.png)
     
 1. Now, navigate back to the tab where you browsed the IP Address and refresh the page. You can observe the **403 Forbidden error**.
     
@@ -261,7 +261,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
     | Name                        | Enter **Webapp-Contoso-AFD (3)**                                  |
     | Tier                        | Select **Premium (4)**                                            |
   
-    ![](images/a152.png)
+    ![](images/E2T5S4.png)
   
 1. On the **Secrets** tab, Leave it default as same and click on **Next: Endpoint >**.
   
@@ -325,7 +325,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. On the Front Door resource, go to the **Overview (1)** blade and locate the endpoint hostname created for your endpoint, for example, **contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net**. Then, **copy (2)** this FQDN.
   
-    ![](images/E2T5.2S1.png)
+    ![](images/E2T5-2S1.png)
     
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
   
@@ -341,7 +341,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. Select one of your web apps, click **Stop**, and then click **Yes** to confirm.
 
-    ![](images/a172.png)
+    ![](images/E2T5-2S5.png)
 
 1. Switch back to your browser and select **Refresh**. You should see the same information page.
 
@@ -351,7 +351,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. Switch back to the Azure Portal, locate the other web app, and stop it.
   
-    ![](images/a173.png)
+    ![](images/E2T5-2S7.png)
 
 1. Switch back to your browser and select Refresh. This time, you should see an error message.
 
@@ -361,7 +361,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. Navigate to the **App Services** tab, select both of your web apps, click **Start**, and then click **Yes** to confirm.
   
-    ![](images/a174.png)
+    ![](images/E2T5-3S1.png)
 
 1. In a new browser tab, paste the **endpoint** you copied in the previous task.
 
@@ -419,7 +419,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. Return to the **Overview** page of **myWAFPolicy**, then select **Switch to prevention mode** to update the policy's operating mode.
 
-    ![](images/E2T5.2S13.png)
+    ![](images/E2T5-3S10.png)
 
     >**Note:** Wait for the firewall policy to get updated before proceeding to the next step.
 
@@ -435,7 +435,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. After getting the response from the website, navigate back to the **myWAFpolicy** page, go to the **Overview (1)** tab, and click on **Switch to detection mode (2)**.
 
-    ![](images/mywafppo.png "select gateway")
+    ![](images/E2T5-3S13.png "select gateway")
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
