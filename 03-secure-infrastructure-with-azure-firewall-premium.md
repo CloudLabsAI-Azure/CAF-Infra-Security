@@ -549,7 +549,7 @@ In this task, you will create an application rule to allow access to sports webs
     | ---------------- | ------------------------------------------------------------ |
     | Subscription     | Select your subscription.                                    |
     | Resource group   | Select the resource group **FirewallVM-rg (1)**                  |
-    | Name             | Enter **Policy-01 (2)**                                      |
+    | Name             | Enter **policy-01 (2)**                                      |
     | Region           | Select **East US (3)**                                       |
     | Policy tier      | Select **Standard (4)**                                      |
  
