@@ -46,9 +46,9 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
    - Name: Enter **DDoSprotection (3)**.
 
-   - Region: **<inject key="Region" />**
+   - Region: **<inject key="Region" /> (4)**
 
-   - Click on **Next : Tags > (4)**.
+   - Click on **Next : Tags > (5)**.
  
      ![](images/upd-09.png)
  

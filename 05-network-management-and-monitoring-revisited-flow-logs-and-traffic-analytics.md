@@ -44,15 +44,15 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
     ![](images/upd-44.png)
 
-1. Navigate to the resource group **JumpVM-rg**, and from the **Overview** tab, select **AzureFirewall**.
+1. Navigate to the resource group **FirewallVM-rg**, and from the **Overview** tab, select **AzureFirewall**.
 
    ![loadbalancer](images/upd-45.png)
    
-1. Select **Firewall public IP** from the Overview tab.
+1. Select **Firewall Public IP** from the Overview tab.
 
     ![pip](images/upd-46.png)
     
-1. Copy the IP address and save it in a text editor.
+1. Copy the **IP address** and save it in a text editor.
 
     ![ip](images/upd-47.png)
       
@@ -74,7 +74,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
    
    > **Note: If you observe the Time interval is greyed out, click on Meanwhile, click here to see just resource data and perform the above step**.
    
-   > **It may take up to 30 to 60 minutes to click on **Meanwhile, click here to see just resource data and perform the above step option to come up**.
+   > It may take up to 30 to 60 minutes to click on **Meanwhile, click here to see just resource data and perform the above step option to come up**.
 
       ![](images1/timeinterval-1.png)
       

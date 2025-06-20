@@ -83,12 +83,12 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
 In this task, you will access the application by going through the Application Gateway that you just configured.
 
 1.  In the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
- 
-     ![](images/E2T1S2.png "search gateway")
+
+    ![](images/searchgateway.png "search gateway")
  
 1. Select your **Application Gateway**.
  
-     ![](images/E2T1S3.png "select gateway")
+     ![](images/E2T1S2.png "search gateway")
  
 1. Select the **Frontend public IP address** of the application gateway.
  
@@ -256,7 +256,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
     | **Setting**                 | **Value**                                                     |
     | ----------------------------| ------------------------------------------------------------  |
     | Subscription                | Select your subscription (1).                                     |
-    | Resource group              | Select the resource group **JumpVM-rg (2)**                       |
+    | Resource group              | Select the resource group **FirewallVM-rg (2)**                       |
     | Resource group location     | <inject key="Region" />                                |
     | Name                        | Enter **Webapp-Contoso-AFD (3)**                                  |
     | Tier                        | Select **Premium (4)**                                            |

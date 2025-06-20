@@ -14,10 +14,10 @@ The topology capability of **Azure Network Watcher** allows you to view all the 
 
 You will be able to complete the following tasks:
 
-  - Task 1: Network Health
-  - Task 2: Network Topology
-  - Task 3: Secure Access via Bastion Host
-  - Task 4: Prepare the Network Watcher monitoring environment and NSG Flow
+- Task 1: Network Health
+- Task 2: Network Topology
+- Task 3: Secure Access via Bastion Host
+- Task 4: Prepare the Network Watcher monitoring environment and NSG Flow
   
 ## Task 1: Network Health
 
@@ -107,7 +107,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
    ![](images/E1T3S6.png "search gateway")
 
-1. On the Virtual Machine page, click on **Connect (1)** under **Connect** and then click on **Go to Bastion (2)**.
+1. On the Virtual Machine page, click on **Connect (1)** under **Connect** section and then click on **Go to Bastion (2)**.
  
    ![](images/updateimg-5.png)
  
@@ -151,7 +151,7 @@ In this task, you will create NSG flow logs and these configurations are used in
 
     ![](images/E1T4S3.png)
 
-1. Under **Monitoring** section, select **NSG flow logs (1)** blade and Click on **+ Create (2)** button.
+1. Under **Monitoring** section, select **NSG flow logs (1)** and Click on **+ Create (2)** button.
 
     ![](images/E1T4S4.png)
 
@@ -159,7 +159,7 @@ In this task, you will create NSG flow logs and these configurations are used in
 
     ![](images/E1T4S6.png)
 
-1. In the Select network security group page, select **FirewallVm-nsg** **(1)** and click on **Confirm selection (2)**.
+1. In the Select network security group page, select **FirewallVM-nsg** **(1)** and click on **Confirm selection (2)**.
 
     ![](images/updateimg-10.png)
 
