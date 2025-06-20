@@ -89,7 +89,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 1. Select the **vnet** from the list.
 
-   ![](images/a15.png "search gateway")
+   ![](images/E1T3S2.png "search gateway")
 
 1. From the sidebar, select **Subnets** from Settings.
    
