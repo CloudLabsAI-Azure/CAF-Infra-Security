@@ -108,19 +108,19 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
       
 1. Under the Traffic Analytics page, scroll down to **Traffic Distribution** to view the analytics of traffic flows across the host, subnet, VNet, and VMSS.
 
-    ![tr](images1/totaltraffic.png)
+    ![tr](images/upd-015.png)
      
 1. To view the analytics of traffic flows across the host, select **IP (1)**, then select **See all (2)** from **Traffic Distribution**.
 
-    ![td](images1/ipsee.png)
+    ![td](images/upd-016.png)
     
 1. You can observe the graph of the **Time trending chart for the top 5 talking IPs** from the **Traffic distribution across the top IPs** page.
 
-    ![see more](images1/trafficdistri.png)
+    ![see more](images/upd-017.png)
     
 1. Under **Details of top 5 talking IPs**, select VM IP to explore more about traffic distribution.
 
-     ![see more](images1/top5.png)
+     ![see more](images/upd-018.png)
      
 1. Close the **Traffic distribution across top IPs** by clicking the **cross (X) icon** at the top-left corner of the page.
     
@@ -128,11 +128,11 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
 1. Now scroll down to **Application ports**, to view analytics for application ports utilized across your environment and select **See all**.
 
-    ![ap](images1/applicationports.png)
+    ![ap](images/upd-019.png)
      
 1. From the **Most frequent L7 protocols** page, you can explore more about the ports and their ranging.
 
-    ![l7](images1/l7proto.png)
+    ![l7](images/upd-020.png)
 
 ## Summary
  
