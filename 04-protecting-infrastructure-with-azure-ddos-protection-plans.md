@@ -42,7 +42,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
    - Subscription: **Leave it as default (1)**.
 
-   - Resource Group: **JumpVM-rg (2)**.
+   - Resource Group: **FirewallVM-rg (2)**.
 
    - Name: Enter **DDoSprotection (3)**.
 
@@ -50,7 +50,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
    - Click on **Next : Tags > (4)**.
  
-     ![](images/ddos3.png)
+     ![](images/upd-09.png)
  
 1. On the **Tags** tab, leave everything to default and then click on **Review + create**.
  
@@ -60,11 +60,11 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
     >**NOTE:** It may take a couple of minutes for the workspace to be created.
 
-      ![](images/ddos5.png)
+      ![](images/upd-010.png)
  
 1. Once the DDoS protection is added, you will see a notification that says **Deployment succeeded**, as shown below. Click on **Go to resource**.
 
-      ![](images/ddos6.png)
+      ![](images/upd-011.png)
  
 1. On the DDoS protection page, under the **Settings** tab, select **Protected resources (1)** then **VNET (2)** and click on **+ Add (3)**.
  
@@ -74,25 +74,25 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
     
     - Subscription: **Leave it as default (1)**.
     
-    - Resource Group: **JumpVM-rg (2)**.
+    - Resource Group: **FirewallVM-rg (2)**.
     
     - Virtual network: Select **vnet (3)**.
     
     - Click on **Add (4)**
    
-      ![](images/ddos8.png)
+      ![](images/upd-012.png)
  
 1. Once the Protected resources are added, you will see a notification that says **Successfully updated the virtual network vnet**, as shown below.
  
       ![](images/ddos9.png)
  
-1. Now, In the Azure portal, search **Network security (1)** and then select **Network security  (2)**.
+1. Now, In the Azure portal, search **Firewall Manager (1)** and then select **Firewall Manager  (2)**.
  
-      ![](images/updateimg-18.png)
+      ![](images/upd-27.png)
 
 1. Under the **Secure your resources** tab, click on **Virtual Networks**, and you will see that you are protected.
  
-      ![](images/updateimg-25.png)
+      ![](images/upd-37.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -111,7 +111,7 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
 1. Select the **firewallIP** from the list.
 
-    ![](images/a34.png)
+    ![](images/upd-38.png)
 
 1. In the **Overview** pane, you will see **Protect IP address** on the bottom right corner, click on **Protect**.
 
@@ -123,7 +123,7 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
 1. In the **Overview (1)** pane, select the **Properties (2)** tab. Under **DDoS protection (3)**, you will see that your public IP address is protected by **IP protection** as shown below.
 
-    ![](images/a38.png)
+    ![](images/upd-39.png)
     
 ## Task 3: View metrics from Public IP address
 
