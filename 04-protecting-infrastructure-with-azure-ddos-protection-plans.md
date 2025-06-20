@@ -139,7 +139,7 @@ In this task, you will explore and visualize the metrics using various kinds of 
 
 1. Once you click on Scope, select **Public IP addresses (1)** from **Resources type**, then select the specific **Public IP address (2)** you want to log metrics for, and click on **Apply (3)**.
 
-     ![](images/a42.png)
+     ![](images/upd-014.png)
 
 1. Under **Metric**, select **Inbound SYN packets to trigger DDoS mitigation** then under **Aggregation**, select type as **Count**.
   
