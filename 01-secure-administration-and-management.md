@@ -29,7 +29,7 @@ In this task, you'll explore Azure Monitor and examine the resource health of va
 
 1. From the sidebar, select **Networks** from Insights.
 
-   ![](images/a4.png "search gateway")
+   ![](images/E1T1S2.png "search gateway")
    
 1. On the **Network health** tab, you can customize the resource health and alerts view using filters such as **Subscription**, **Resource Group**, and **Type**. You can also use the search box to find resources and their associated resources. For example, a public IP may be associated with an application gateway. A search for the public IP's DNS name will return both the public IP and the associated application gateway.
 
@@ -105,7 +105,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 1. Select the **FirewallVM** from the list.
 
-   ![](images/updateimg-4.png "search gateway")
+   ![](images/E1T3S6.png "search gateway")
 
 1. On the Virtual Machine page, click on **Connect (1)** under **Connect** and then click on **Go to Bastion (2)**.
  
@@ -143,17 +143,17 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
     ![](images/cafinfra5.jpg)
 
-1. Select the **JumpVM-rg** from the list.
+1. Select the **FirewallVM-rg** from the list.
 
-    ![](images/cafinfra6.jpg)
+    ![](images/E1T4S2.png)
 
 1. From the list of resources, select the Network Security Group named **FirewallVM-nsg**.
 
-    ![](images/updateimg-8.png)
+    ![](images/E1T4S3.png)
 
 1. Under **Monitoring** section, select **NSG flow logs (1)** blade and Click on **+ Create (2)** button.
 
-    ![](images/updateimg-9.png)
+    ![](images/E1T4S4.png)
 
 1. In the Create a flow log page, select the **default subscription (1)**, **Network security group (2)** as Flow log type, and **Network security group (4)** as a Select target resource.
 
@@ -171,7 +171,7 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
    - **Retention (days):** **30 (3)**
 
-       ![](images/E1T4S8.png)  
+       ![](images/E1T4S7.png)  
    
 1. Under the **Analytics** tab, check the box to **Enable traffic analytics (1)**, select **Every 10 mins (2)** under the Traffic analytics processing interval and click **Review + create (3)**.
 
@@ -181,19 +181,19 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
    >**Note:** The deployment might take a few minutes to complete. Wait till the deployment is completed before proceeding to the next step.
 
-   ![](images/E1T4S10.png)  
+   ![](images/E1T4S9.png)  
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and **select (2)** from the suggestions.
 
     ![](images/cafinfra5.jpg)
 
-1. Select the **JumpVM-rg** from the list.
+1. Select the **FirewallVM-rg** from the list.
 
-    ![](images/cafinfra6.jpg)
+    ![](images/E1T4S2.png)
 
 1. From the list of resources, select the Network security group named **FirewallVM-nsg**.
 
-    ![](images/updateimg-8.png)
+    ![](images/E1T4S3.png)
 
 1. From the sidebar, select **Diagnostic settings (1)** under monitoring and click on **+ Add diagnostic setting (2)**.
 
