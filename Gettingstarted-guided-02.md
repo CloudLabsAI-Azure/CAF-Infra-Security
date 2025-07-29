@@ -1,6 +1,6 @@
 # Getting Started with Your Microsoft Azure Infrastructure and Application Security Workshop
 
-### Overall Estimated Duration : 2 hours 30 Minutes
+### Overall Estimated Duration : 2 Hours 30 Minutes
 
 ## Overview 
 
@@ -37,16 +37,15 @@ Finally, to ensure performance and security, Azure Front Door is deployed with r
 
 The architecture for this lab involves the following key components: 
 
+- **Azure Application Gateway:** Acts as the entry point for the web application, routing traffic to the backend. It integrates with Web Application Firewall (WAF) to inspect incoming traffic and prevent malicious attacks, such as SQL injection and XSS, ensuring a secure application environment.
 
-- **Azure Application Gateway**: Acts as the entry point for the web application, routing traffic to the backend. It integrates with Web Application Firewall (WAF) to inspect incoming traffic and prevent malicious attacks, such as SQL injection and XSS, ensuring a secure application environment.
+- **Web Application Firewall (WAF):** Integrated with both Azure Application Gateway and Azure Front Door, the WAF helps protect the web application from threats and vulnerabilities by filtering and blocking malicious traffic based on custom security policies. It ensures the application remains secure from a range of attacks.
 
-- **Web Application Firewall (WAF)**: Integrated with both Azure Application Gateway and Azure Front Door, the WAF helps protect the web application from threats and vulnerabilities by filtering and blocking malicious traffic based on custom security policies. It ensures the application remains secure from a range of attacks.
+- **Azure Front Door:** A global load balancer and traffic manager that ensures high availability and low latency for the application by routing traffic to the nearest region. It provides an additional layer of security through its own WAF and rate limiting features, preventing abuse by controlling the number of requests a client can make within a specified time frame.
 
-- **Azure Front Door**: A global load balancer and traffic manager that ensures high availability and low latency for the application by routing traffic to the nearest region. It provides an additional layer of security through its own WAF and rate limiting features, preventing abuse by controlling the number of requests a client can make within a specified time frame.
+- **Azure Virtual Machines (VMs):** Hosts the backend services of the application, providing the necessary compute resources for processing requests and serving the application content. These VMs are protected by the Application Gateway and WAF to ensure that only secure traffic reaches the backend.
 
-- **Azure Virtual Machines (VMs)**: Hosts the backend services of the application, providing the necessary compute resources for processing requests and serving the application content. These VMs are protected by the Application Gateway and WAF to ensure that only secure traffic reaches the backend.
-
-- **Rate Limiting (via Azure Front Door)**: This feature controls the number of requests that a client can make within a specific time period, protecting the application from Denial of Service (DoS) attacks. Rate limiting ensures the application remains responsive and maintains a smooth user experience, even under heavy traffic conditions.
+- **Rate Limiting (via Azure Front Door):** This feature controls the number of requests that a client can make within a specific time period, protecting the application from Denial of Service (DoS) attacks. Rate limiting ensures the application remains responsive and maintains a smooth user experience, even under heavy traffic conditions.
 
 ## Getting Started with the Lab 
 
@@ -60,7 +59,7 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
 
 In the integrated environment, the lab VM serves as the designated workspace, while the lab guide is accessible on the right side of the screen.
 
-**Note**: Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
+**Note:** Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
 
 ## Exploring Your Lab Resources
 
@@ -108,13 +107,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
     ![](./images/imagescre.png)
  
-1. If prompted to stay signed in, you can click "No." 
+1. If prompted to Stay signed in, you can click "No".
 
     ![](./images/GS9.png)
-
-1. If you see the pop-up **Sign in to sync data**, Click on **No,thanks.** 
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
