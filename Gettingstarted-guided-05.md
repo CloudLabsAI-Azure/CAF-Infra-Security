@@ -1,6 +1,6 @@
 # Getting Started with Your Microsoft Azure Infrastructure and Application Security Workshop
 
-### Overall Estimated Duration : 2 hours
+### Overall Estimated Duration: 2 Hours
 
 ## Overview
 
@@ -8,7 +8,7 @@ In this hands-on lab, you will explore network management and monitoring in Azur
 
 ## Objective  
 
-**Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics** Learn to configure and manage network security in Azure by setting up Network Security Groups (NSGs) to define inbound port rules, controlling virtual machine (VM) access, and ensuring only authorized traffic is allowed. Gain hands-on experience configuring a Web Application Firewall (WAF) policy using Azure's Application Gateway to protect web applications from common threats and vulnerabilities. Additionally, practice enabling diagnostic settings for Azure Firewall to collect and analyze logs and metrics, enhancing network visibility. Explore how to use Traffic Analytics in Azure Network Watcher to monitor and optimize network traffic, detect potential security threats, and gain insights into traffic patterns to improve network performance. These activities will help you develop the skills necessary to manage and secure Azure network environments effectively.
+**Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics:** Learn to configure and manage network security in Azure by setting up Network Security Groups (NSGs) to define inbound port rules, controlling virtual machine (VM) access, and ensuring only authorized traffic is allowed. Gain hands-on experience configuring a Web Application Firewall (WAF) policy using Azure's Application Gateway to protect web applications from common threats and vulnerabilities. Additionally, practice enabling diagnostic settings for Azure Firewall to collect and analyze logs and metrics, enhancing network visibility. Explore how to use Traffic Analytics in Azure Network Watcher to monitor and optimize network traffic, detect potential security threats, and gain insights into traffic patterns to improve network performance. These activities will help you develop the skills necessary to manage and secure Azure network environments effectively.
 
 ## Prerequisites
 
@@ -40,9 +40,7 @@ The architecture for this lab involves the following key components:
 
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-![](./images/GS6.png) 
-
->**Note:** If you observe any PowerShell script being executed on the VM, kindly do not close the window. Allow the script to complete its execution fully before taking any further actions.
+![](./images/GS6.png)
 
 ## Virtual Machine & Lab Guide
 
@@ -96,13 +94,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
     ![](./images/imagescre.png)
  
-1. If prompted to stay signed in, you can click "No." 
+1. If prompted to stay signed in, you can click "No".
 
     ![](./images/GS9.png)
-
-1. If you see the pop-up **Sign in to sync data**, Click on **No,thanks.** 
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
