@@ -1,6 +1,6 @@
 # Getting Started with Your Microsoft Azure Infrastructure and Application Security Workshop
 
-### Overall Estimated Duration : 1 hour 30 Minutes
+### Overall Estimated Duration: 1 Hour 30 Minutes
 
 ## Overview 
 
@@ -16,9 +16,9 @@ In this hands-on lab, you will configure Azure DDoS Protection to safeguard your
 
 Participants should have:  
   
-- **Understanding of Virtual Networks (VNets)**: Familiarity with the concept of virtual networks, their role in cloud infrastructure, and how they interact with other Azure resources.  
-- **Awareness of DDoS Concepts**: Basic understanding of Distributed Denial of Service (DDoS) attacks, including their types (volumetric, protocol, and resource layer attacks) and impact on availability and security.  
-- **Basic Monitoring Skills**: Familiarity with Azure's monitoring tools, including visualizing metrics and interpreting data for proactive threat detection and mitigation.  
+- **Understanding of Virtual Networks (VNets):** Familiarity with the concept of virtual networks, their role in cloud infrastructure, and how they interact with other Azure resources.  
+- **Awareness of DDoS Concepts:** Basic understanding of Distributed Denial of Service (DDoS) attacks, including their types (volumetric, protocol, and resource layer attacks) and impact on availability and security.  
+- **Basic Monitoring Skills:** Familiarity with Azure's monitoring tools, including visualizing metrics and interpreting data for proactive threat detection and mitigation.  
 
 ## Architecture
 
@@ -44,15 +44,13 @@ The architecture for this lab involves the following key components:
 
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-![](./images/GS6.png) 
-
->**Note:** If you observe any PowerShell script being executed on the VM, kindly do not close the window. Allow the script to complete its execution fully before taking any further actions.
+![](./images/GS6.png)
 
 ## Virtual Machine & Lab Guide
 
 In the integrated environment, the lab VM serves as the designated workspace, while the lab guide is accessible on the right side of the screen.
 
-**Note**: Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
+**Note:** Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
 
 ## Exploring Your Lab Resources
 
@@ -74,7 +72,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 ## Managing Your Virtual Machine
 
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
 ![](./images/GS5.png)
   
@@ -100,13 +98,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
     ![](./images/imagescre.png)
  
-1. If prompted to stay signed in, you can click "No." 
+1. If prompted to stay signed in, you can click "No".
 
     ![](./images/GS9.png)
-
-1. If you see the pop-up **Sign in to sync data**, Click on **No,thanks.** 
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
