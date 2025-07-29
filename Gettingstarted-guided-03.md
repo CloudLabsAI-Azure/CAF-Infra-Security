@@ -15,12 +15,12 @@ In this hands-on lab, you will configure and manage multiple network security fe
 
 Participants should have:
 
-- **Understanding of Azure Networking and Security**: Basic knowledge of networking concepts such as virtual networks, subnets, and network security groups (NSGs) within Azure.
-- **Familiarity with Azure Firewall and Web Application Firewall (WAF)**: Basic understanding of Azure Firewall and WAF features, including their purpose and functionality for network security.
-- **Basic Understanding of Firewall Rules and Policies**: Familiarity with how to create and manage firewall rules and security policies in Azure to control network traffic.
-- **Experience with Diagnostic Settings and Logs**: Knowledge of how to configure diagnostic settings and view logs in Azure to monitor and troubleshoot resources effectively.
-- **Experience in Network Configuration**: Basic understanding of configuring route tables, public IP addresses, and Network Address Translation (NAT) rules in Azure.
-- **Basic Knowledge of Web Application Security**: Understanding the fundamentals of web application security and the role of firewall rules in protecting applications from cyber threats.
+- **Understanding of Azure Networking and Security:** Basic knowledge of networking concepts such as virtual networks, subnets, and network security groups (NSGs) within Azure.
+- **Familiarity with Azure Firewall and Web Application Firewall (WAF):** Basic understanding of Azure Firewall and WAF features, including their purpose and functionality for network security.
+- **Basic Understanding of Firewall Rules and Policies:** Familiarity with how to create and manage firewall rules and security policies in Azure to control network traffic.
+- **Experience with Diagnostic Settings and Logs:** Knowledge of how to configure diagnostic settings and view logs in Azure to monitor and troubleshoot resources effectively.
+- **Experience in Network Configuration:** Basic understanding of configuring route tables, public IP addresses, and Network Address Translation (NAT) rules in Azure.
+- **Basic Knowledge of Web Application Security:** Understanding the fundamentals of web application security and the role of firewall rules in protecting applications from cyber threats.
 
 ## Architecture
 
@@ -29,6 +29,7 @@ The architecture involves configuring an Azure Application Gateway with Web Appl
 The architecture also includes the configuration of route tables to direct traffic through the firewall for filtering and security. Web category filtering is tested by accessing allowed and restricted websites from a JumpVM, ensuring proper filtering policies are applied. URL filtering is implemented to control access to specific websites by creating application rules in the firewall policy, allowing or blocking URLs based on defined criteria.
 
 For more centralized management, IP Groups are used to simplify rule creation and management, grouping multiple IP ranges into a single object for easier access control. Azure Firewall Policies are applied across the network to enforce security measures and control traffic flow, while a secured virtual hub is created to integrate Azure Firewall for enhanced network protection, ensuring secure connectivity between different resources in the architecture.
+
 ## Architecture Diagram 
 
 ![](./images/Lab003.png) 
@@ -67,7 +68,7 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
 
 In the integrated environment, the lab VM serves as the designated workspace, while the lab guide is accessible on the right side of the screen.
 
-**Note**: Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
+**Note:** Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
 
 ## Exploring Your Lab Resources
 
@@ -115,13 +116,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
     ![](./images/imagescre.png)
  
-1. If prompted to stay signed in, you can click "No." 
+1. If prompted to stay signed in, you can click "No".
 
     ![](./images/GS9.png)
-
-1. If you see the pop-up **Sign in to sync data**, Click on **No,thanks.** 
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
