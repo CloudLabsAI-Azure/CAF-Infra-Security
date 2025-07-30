@@ -1,4 +1,4 @@
-# Exercise 2: Secure application 
+# Exercise 1: Secure application 
 
 ### Estimated Duration: 120 Minutes
 
