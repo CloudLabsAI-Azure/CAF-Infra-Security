@@ -31,7 +31,7 @@ Finally, to ensure performance and security, Azure Front Door is deployed with r
 
 ## Architecture Diagram 
 
-![](./images/Lab002.png) 
+![](./images/Lab002.png)
 
 ## Explanation of Components 
 
@@ -59,7 +59,7 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
 
 In the integrated environment, the lab VM serves as the designated workspace, while the lab guide is accessible on the right side of the screen.
 
-**Note:** Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
+> **Note:** Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
 
 ## Exploring Your Lab Resources
 
@@ -75,13 +75,13 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 ## Lab Guide Zoom In/Zoom Out
  
-To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment. 
+To adjust the zoom level for the environment page, click the **A↕** icon located next to the timer in the lab environment. 
 
-![08](./images/zoom.png)  
+![](./images/zoom.png)
 
 ## Managing Your Virtual Machine
 
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
 ![](./images/GS5.png)
   

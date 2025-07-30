@@ -444,4 +444,4 @@ In this exercise, you have covered the following:
 - Performed Attack simulation
 - Performed Rate Limiting using Azure Front Door
 
-### Click on **Next >>** to proceed with next exercise.
+### You have successfully completed the lab.
