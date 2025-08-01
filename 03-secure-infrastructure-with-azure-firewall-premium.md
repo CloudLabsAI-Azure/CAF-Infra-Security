@@ -18,14 +18,71 @@ For more information, see `https://learn.microsoft.com/en-us/azure/firewall/prem
 
 You will be able to complete the following tasks:
 
-- Task 1: Add firewall diagnostics settings
-- Task 2: Test IDPS for HTTP traffic
-- Task 3: Web categories testing
-- Task 4: Implement and Test URL filtering
-- Task 5: IP Groups
-- Task 6: Azure Firewall Policies with Firewall Manager
+- Task 1: Configure WAF to protect your web application
+- Task 2: Add firewall diagnostics settings
+- Task 3: Test IDPS for HTTP traffic
+- Task 4: Web categories testing
+- Task 5: Implement and Test URL filtering
+- Task 6: IP Groups
+- Task 7: Azure Firewall Policies with Firewall Manager
 
-## Task 1: Add firewall diagnostics settings 
+## **Task 1: Configure WAF to protect your web application**
+ 
+ In this task, you will add a Virtual Machine as the Backend pool of the Application gateway and also configure the Application Gateway from the firewall policy.
+ 
+ 1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
+ 
+      ![](images/searchgateway.png "search gateway")
+    
+ 1. Select your **Application Gateway**.
+
+      ![](images/E2T1S2.png "select gateway")
+      
+ 1. On the Application gateway page, click on the **Backend pools (1)** under **Settings** and then select **AGBackendtarget (2)**.
+
+     ![](images/E2T1S3.png)
+     
+ 1. On the **Edit backend pool** page, follow the instructions below:
+
+    - **Target type:** Select **Virtual Machine (1)** from the drop-down.
+
+    - **Target:** Select **FirewallVM-nic (2)** from drop-down.
+
+    - Click on **Save (3)**.
+
+      ![](images/updateimg-12.png)
+    
+1. Once the Backend pools are saved, you will see the notification that says **Deployment succeeded**.
+
+   ![](images/editbackendpool-succeeded.png)
+
+1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall Policies (WAF) (2)**.
+
+   ![](images1/firewallpolicies.png)
+ 
+1. On the Web Application Firewall page, click on **Firewall policy**, then navigate to the **Settings** section and select **Associated application gateways**.
+
+   ![](images/E2T1S7.png)
+     
+1. On the **Associated application gateways** page, click on **+ Add association (1)** and select **Application Gateway (2)**
+
+    ![](images/E2T1S8.png)
+    
+1. Under the **Associate an application gateway** page, follow the instructions below:
+
+    - **Application Gateway (WAF v2 SKU):** Select **Application Gateway (1)** from the drop down. 
+    
+    - **Check** the box next to **Apply the Web Application Firewall policy configuration even if it's different from the current configuration (2)**.
+    
+    - Click on **Add (3)**.
+
+      ![](images1/associateappgateway.png)
+
+1. Once the Application Gateway are saved, you will see the notification that says **Updated the Application Gateway**.
+
+   ![](images1/appgateway-notification.png)
+
+## Task 2: Add firewall diagnostics settings 
 
 In this task, you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
@@ -79,7 +136,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/upd-3.png "search gateway")
 
-## Task 2: Test IDPS for HTTP traffic
+## Task 3: Test IDPS for HTTP traffic
 
 Azure Firewall Premium provides signature-based IDPS to allow rapid detection of attacks by looking for specific patterns, such as byte sequences in network traffic, or known malicious instruction sequences used by malware.
 
@@ -220,7 +277,7 @@ In this task, you will test IDPS for HTTP traffic.
 
 
 
-## Task 3: Web categories testing
+## Task 4: Web categories testing
  
 In this task, you will create an application rule to allow access to sports websites.
  
@@ -379,7 +436,7 @@ In this task, you will create an application rule to allow access to sports webs
 
      ![](images/E3T3S21.png)
 
-## Task 4: Implement and Test URL filtering
+## Task 5: Implement and Test URL filtering
  
 1. Navigate back to the tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **Hmmm... can't reach this page**.
  
@@ -447,7 +504,7 @@ In this task, you will create an application rule to allow access to sports webs
 
      ![](images/E3T4S10.png)
 
-## Task 5: IP Groups
+## Task 6: IP Groups
 
 1. Navigate to the home page in the Azure portal, search for **IP groups (1)** and select **IP Groups (2)** from suggestions.
  
@@ -526,9 +583,9 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/a144.jpg "search gateway") 
  
-## Task 6: Azure Firewall Policies with Firewall Manager (Optional)
+## Task 7: Azure Firewall Policies with Firewall Manager (Optional)
 
-### Task 6.1: Create a Firewall Policy
+### Task 7.1: Create a Firewall Policy
 
 1. Navigate to the home page in the Azure portal, search for **Firewall Manager (1)** and select **Firewall Manager (2)** from suggestions.
  
@@ -599,7 +656,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/upd-05.png)
  
-### Task 6.2: Create the firewall hub virtual network
+### Task 7.2: Create the firewall hub virtual network
  
 1. Navigate to the home page in the Azure portal, search for **Firewall Manager (1)** and select **Firewall Manager (2)** from suggestions.
  
@@ -644,7 +701,7 @@ In this task, you will create an application rule to allow access to sports webs
 
     >**Note**: Deployment may take up to 30 minutes to complete.
  
-### Task 6.3: Associate the firewall policy with the virtual hub
+### Task 7.3: Associate the firewall policy with the virtual hub
 
 1. Navigate to the home page in the Azure portal, search for **Fireall Manager (1)** and select **Fireall Manager (2)** from suggestions.
  
@@ -676,6 +733,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 In this exercise, you have covered the following:
   
+- Configured WAF to protect your web application
 - Added firewall diagnostics settings 
 - Tested IDPS for HTTP traffic
 - Performed Web category testing 
@@ -683,4 +741,4 @@ In this exercise, you have covered the following:
 - Performed IP groups
 - Performed Azure Firewall Policies with the Firewall Manager
 
-### Click on **Next >>** to proceed with next exercise.
+## You have successfully completed the lab.
