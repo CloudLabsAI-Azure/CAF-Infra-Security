@@ -1,4 +1,4 @@
-# Exercise 3: Secure Infrastructure with Azure Firewall Premium
+# Exercise 1: Secure Infrastructure with Azure Firewall Premium
 
 ### Estimated Duration: 120 Minutes
 
