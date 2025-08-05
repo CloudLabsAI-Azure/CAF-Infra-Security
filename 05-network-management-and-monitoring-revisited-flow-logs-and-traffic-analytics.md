@@ -1,4 +1,4 @@
-# Exercise 5: Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
+# Exercise 1: Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
 ### Estimated Duration: 60 Minutes
 
