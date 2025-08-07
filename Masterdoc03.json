@@ -8,7 +8,7 @@
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/CAF-Infra-Security/refs/heads/guided-labs/02-secure-application.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/CAF-Infra-Security/refs/heads/guided-labs/03-secure-infrastructure-with-azure-firewall-premium.md",
         "Order": 2
       }      
      
