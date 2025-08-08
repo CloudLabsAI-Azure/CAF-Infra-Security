@@ -441,7 +441,7 @@ In this task, you will create an application rule to allow access to sports webs
 1. Navigate back to the tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **Hmmm... can't reach this page**.
  
     ```
-    www.hindustantimes.com
+    https://www.hindustantimes.com
     ```
  
     ![](images/updateimg-30.png)
@@ -476,7 +476,7 @@ In this task, you will create an application rule to allow access to sports webs
 
     > **Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to the next steps.     
 
-1. Once the deployment completes, navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.hindustantimes.com`. On the Privacy error connection page, click on **Advanced**.
+1. Once the deployment completes, navigate back to the Bastion VM tab and refresh the page where you have browsed for `https://www.hindustantimes.com`. On the Privacy error connection page, click on **Advanced**.
  
     ![](images/updateimg-29.png)
  
@@ -587,13 +587,13 @@ In this task, you will create an application rule to allow access to sports webs
 
 ### Task 7.1: Create a Firewall Policy
 
-1. Navigate to the home page in the Azure portal, search for **Firewall Manager (1)** and select **Firewall Manager (2)** from suggestions.
+1. Navigate to the home page in the Azure portal, search for **Firewalls (1)** and select **Firewalls (2)** from suggestions.
  
-     ![](images/upd-27.png)
+     ![](images/T71S1.png)
  
-1. On the Firewall Manage page, navigate to **Azure Firewall Policies (1)** under Security and click on **+ Create Azure Firewall Policy (2)**. 
+1. On the Firewall Manager dropdown, navigate to **Azure Firewall Policies (1)** under Security and click on **+ Create (2)**. 
 
-      ![](images/E3T6.1S2.png)
+      ![](images/T71S2.png)
 
 1. On the **Basics** tab of Azure Firewall Policy page, enter or select the following information and click on **Next: DNS Settings > (6)**.
  
@@ -658,13 +658,13 @@ In this task, you will create an application rule to allow access to sports webs
  
 ### Task 7.2: Create the firewall hub virtual network
  
-1. Navigate to the home page in the Azure portal, search for **Firewall Manager (1)** and select **Firewall Manager (2)** from suggestions.
+1. Navigate to the home page in the Azure portal, search for **Firewalls (1)** and select **Firewalls (2)** from suggestions.
  
-    ![](images/upd-27.png)
+     ![](images/T71S1.png)
  
-1. On the Firewall Manger page, navigate to **Virtual Hubs (1)** under Deployments section and click **+ Create new secured virtual hub (2)**.
+1. On the **Secure your resources** page, navigate to **Virtual Hubs (1)** under Deployments section and click **+ Create new secured virtual hub (2)**.
  
-    ![](images/upd-30.png)
+    ![](images/T72S2.png)
 
 1. On the **Basics** tab of secured virtual hub page, enter or select the following information and click on **Next: Azure Firewall > (8)**.
    
@@ -703,13 +703,13 @@ In this task, you will create an application rule to allow access to sports webs
  
 ### Task 7.3: Associate the firewall policy with the virtual hub
 
-1. Navigate to the home page in the Azure portal, search for **Fireall Manager (1)** and select **Fireall Manager (2)** from suggestions.
+1. Navigate to the home page in the Azure portal, search for **Firewalls (1)** and select **Firewalls (2)** from suggestions.
  
-    ![](images/upd-27.png)
+     ![](images/T71S1.png)
   
-1. On the Fireall Manager page, under **Deployments** section, click on **Virtual Hubs**.
+1. On the Fireall Manager page, under **Secure your resources** section, click on **Virtual Hubs**.
   
-    ![](images/upd-31.png)
+    ![](images/T73S2.png)
  
 1. Select the checkbox for **Hub-01 (1)**, click on **Manage security (2)**, and then choose **Choose another firewall policy (3)**.
 
