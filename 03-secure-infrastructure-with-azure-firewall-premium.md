@@ -178,7 +178,7 @@ In this task, you will test IDPS for HTTP traffic.
 
    ![FM](images/firewallmanager-1.png)
     
-1. Select **Azure Firewall Policies (1)** under **Security**, then click on the firewall policy named **firewallpolicy (2)**.
+1. Select **Azure Firewall Policies (1)** under **Firewall Manager**, then click on the firewall policy named **firewallpolicy (2)**.
 
    ![policy](images/upd-10.png)
    
