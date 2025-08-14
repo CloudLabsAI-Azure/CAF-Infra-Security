@@ -438,7 +438,12 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
     ![](images/E2T5-3S13.png "select gateway")
 
+    <validation step="e1519098-0127-4c6e-a16f-29740022e862" /> 
 
+    > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Summary
  
