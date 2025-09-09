@@ -68,7 +68,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
  
 1. On the DDoS protection page, under the **Settings** tab, select **Protected resources (1)** then **VNET (2)** and click on **+ Add (3)**.
  
-      ![](images/ddos10.png)
+      ![](images/infra-app-security-lab1-040.png)
 
 1. On the **Add virtual network to DDoS plan** blade, provide the information as mentioned below,
     
@@ -86,15 +86,13 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
  
       ![](images/ddos9.png)
  
-1. Now, In the Azure portal, search **Firewall Manager (1)** and then select **Firewall Manager  (2)**.
+1. Navigate to the home page in the Azure portal, search for **Firewalls (1)** and select **Firewalls (2)** from suggestions.
  
-      ![](images/upd-27.png)
-
-1. Under the **Secure your resources** tab, click on **Virtual Networks**, and you will see that you are protected.
+    ![](images/infra-app-security-lab1-35.png)
  
-      ![](images/upd-37.png)
+1. Navigate to **Virtual Networks** under **Secure your resources** section, and you will see that you are protected.
 
-
+    ![](images/infra-app-security-lab1-41.png)
 
 ## Task 2: Configure Azure DDoS IP Protection
 
@@ -126,7 +124,7 @@ In this task, you will explore and visualize the metrics using various kinds of 
 
 1. Navigate back to the **firewallIP** page, Under Monitoring, select **Metrics**.
 
-    ![](images/a40.png)
+    ![](images/infra-app-security-lab1-43.png)
 
 1. Select **Add metric** then **Scope**.
 
