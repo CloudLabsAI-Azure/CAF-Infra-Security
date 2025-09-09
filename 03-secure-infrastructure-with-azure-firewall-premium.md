@@ -41,7 +41,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/scafinfra21-1.png "search gateway")
 
-1. Select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
+1. Select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**. On the **Do you want to register the selected features?** pop-up, choose **OK**.
 
    ![](images/scafinfra22-1.png "search gateway")
 
@@ -51,13 +51,13 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
 1. On the firewall page, select **Diagnostic settings** under Monitoring section.
 
-   ![](images/firewall2.png "search gateway")
+   ![](images/infra-app-security-lab1-17.png "search gateway")
 
 1. Select **+ Add diagnostic setting** on the **Diagnostic settings** page. 
 
-   ![](images/firewall4.png "search gateway")
+   ![](images/infra-app-security-lab1-18.png "search gateway")
 
-1. Enter the **Diagnostic setting name** as **fw-diagnostics**
+1. Enter the **Diagnostic setting name** as **fw-diagnostics**.
 
    ![](images/firewall3.png "search gateway")
 
@@ -107,7 +107,7 @@ In this task, you will test IDPS for HTTP traffic.
     
 1. Click on the **AzureFirewall**.
 
-    ![firewall](images/upd-7.png)
+    ![firewall](images/infra-app-security-lab1-19.png)
    
 1. Select **Firewall Public IP** from the **Overview** tab.
 
