@@ -1,6 +1,6 @@
 # Exercise 2: Secure application 
 
-### Estimated Duration: 120 Minutes
+## Estimated Duration: 120 Minutes
 
 ## Overview
 
@@ -180,7 +180,12 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
    ![](images/infra-app-security-lab1-9.png "select gateway")
 
-
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="09e5a606-3e3a-4e3a-bc6b-93380fcde756" />
 
 ## Task 4: Attack simulation
      
@@ -313,7 +318,14 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
     ![](images/a61.png)
    
     ![](images/upd-022.png)
-  
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="cc732f3b-1c39-4339-b1c4-b43b2b31b193" />
+
 ### Task 5.2: View Azure Front Door in action
   
 Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
@@ -444,4 +456,4 @@ In this exercise, you have covered the following:
 - Performed Attack simulation
 - Performed Rate Limiting using Azure Front Door
 
-### Click on **Next >>** to proceed with next exercise.
+## Click on **Next >>** to proceed with next exercise.

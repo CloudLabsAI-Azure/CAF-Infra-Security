@@ -1,6 +1,6 @@
 # Exercise 1: Secure administration and management
 
-### Estimated Duration: 120 Minutes
+## Estimated Duration: 120 Minutes
 
 ## Overview
 
@@ -155,13 +155,13 @@ In this task, you will create NSG flow logs and these configurations are used in
 
     ![](images/E1T4S4.png)
 
-1. In the Create a flow log page, select the **default subscription (1)**, **Network security group (2)** as Flow log type, and **Network security group (4)** as a Select target resource.
+1. In the Create a flow log page, select the **default subscription (1)**, **Virtual network (2)** as Flow log type, select dropdown button beside **+ Select target resource (3)** then choose **Virtual network (4)** as a Select target resource.
 
-    ![](images/E1T4S6.png)
+    ![](images/infra-app-security-lab1-44.png)
 
-1. In the Select network security group page, select **FirewallVM-nsg** **(1)** and click on **Confirm selection (2)**.
+1. In the **Select Virtual network** page, select **vnet** **(1)** and click on **Confirm selection (2)**.
 
-    ![](images/updateimg-10.png)
+    ![](images/infra-app-security-lab1-45.png)
 
 1. For the Instance details, provide the following details and click on **Next: Analytics > (4)**
 
@@ -171,17 +171,17 @@ In this task, you will create NSG flow logs and these configurations are used in
 
    - **Retention (days):** **30 (3)**
 
-       ![](images/E1T4S7.png)  
+       ![](images/infra-app-security-lab1-46.png)  
    
-1. Under the **Analytics** tab, check the box to **Enable traffic analytics (1)**, select **Every 10 mins (2)** under the Traffic analytics processing interval and click **Review + create (3)**.
+1. Under the **Analytics** tab, check the box to **Enable traffic analytics (1)**, select **Every 10 mins (2)** under the **Traffic analytics processing interval** and click **Review + create (3)**.
 
-    ![create](images/a149-1.png)
+    ![create](images/infra-app-security-lab1-47.png)
 
 1. On the Review + create tab, review the summary and click on **Create** button.
 
    >**Note:** The deployment might take a few minutes to complete. Wait till the deployment is completed before proceeding to the next step.
 
-   ![](images/E1T4S9.png)  
+   ![](images/infra-app-security-lab1-48.png)  
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and **select (2)** from the suggestions.
 
@@ -209,6 +209,12 @@ In this task, you will create NSG flow logs and these configurations are used in
 
       ![](images/E1T4S15.png)
 
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="f287d359-99b1-4b6c-8519-647983bf4a68" />
 
 
 ## Summary
@@ -220,4 +226,4 @@ In this exercise, you have covered the following:
 - Secured Access via Bastion Host
 - Configured the Network Watcher monitoring environment and NSG Flow
 
-### Click on **Next >>** to proceed with next exercise.
+## Click on **Next >>** to proceed with next exercise.

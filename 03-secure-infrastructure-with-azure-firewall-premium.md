@@ -1,6 +1,6 @@
 # Exercise 3: Secure Infrastructure with Azure Firewall Premium
 
-### Estimated Duration: 120 Minutes
+## Estimated Duration: 120 Minutes
 
 ## Overview: 
 
@@ -218,7 +218,12 @@ In this task, you will test IDPS for HTTP traffic.
  
      ![](images/firewall14.png "search gateway")
 
-
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="e5f9dd50-2ebf-44f8-bcc0-09543bd58111" />
 
 ## Task 3: Web categories testing
  
@@ -670,7 +675,12 @@ In this task, you will create an application rule to allow access to sports webs
 
     ![](images1/upd-50.png)
     
-
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="659469d6-4b83-467d-a4ce-83adf7dc61ba" />
 
 ## Summary
  
@@ -683,4 +693,4 @@ In this exercise, you have covered the following:
 - Performed IP groups
 - Performed Azure Firewall Policies with the Firewall Manager
 
-### Click on **Next >>** to proceed with next exercise.
+## Click on **Next >>** to proceed with next exercise.

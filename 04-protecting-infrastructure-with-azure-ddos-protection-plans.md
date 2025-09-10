@@ -1,10 +1,10 @@
 # Exercise 4: Protecting Infrastructure with Azure DDoS Protection Plans
 
-### Estimated Duration: 60 Minutes
+## Estimated Duration: 60 Minutes
 
 ## Overview
 
-### What is DDoS protection?
+## What is DDoS protection?
 
 Distributed denial of service (DDoS) attacks are some of the largest availability and security concerns facing customers who are moving their applications to the cloud. A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the Internet.
 
@@ -94,6 +94,13 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
     ![](images/infra-app-security-lab1-41.png)
 
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="d6923ba2-dfed-45e7-bedb-a5e206ea86c0" />
+
 ## Task 2: Configure Azure DDoS IP Protection
 
 In this task, you will secure the Public IP address by using DDoS protection.
@@ -150,4 +157,4 @@ In this exercise, you have covered the following:
 - Configured Azure DDoS IP Protection
 - Visualized the metrics using a Public IP address
 
-### Click on **Next >>** to proceed with next exercise.
+## Click on **Next >>** to proceed with next exercise.
