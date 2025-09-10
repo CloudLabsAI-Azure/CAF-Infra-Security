@@ -131,13 +131,13 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
  
     ![](images1/allowpopup.png)
 
-## Task 4: Prepare the Network Watcher monitoring environment and NSG Flow
+## Task 4: Prepare the Network Watcher monitoring environment and Virtual network Flow
 
-**NSG Diagnostic Logs** provide detailed information about the health and performance of a Network Security Group. These logs include data related to the configuration changes, rules evaluation, and the overall state of the NSG. Diagnostic Logs can help identify issues with NSG rules, detect unauthorised access attempts, and monitor the NSG's behaviour.
+**Virtual network Diagnostic Logs** are platform logs in Azure that capture information about operations and events within an Azure Virtual Network (VNet) and its related resources (such as subnets, network security groups, and route tables).
 
-**NSG Flow Logs** capture information about the network traffic flowing through a Network Security Group. They provide visibility into the network communications and can be used for analyzing network behaviour, detecting threats, and investigating security incidents.
+**Virtual network flow logs** support connecting at the virtual network, subnet, and network interface level. They provide visibility into the network communications and can be used for analyzing network behaviour, detecting threats, and investigating security incidents.
 
-In this task, you will create NSG flow logs and these configurations are used in Exercise 5, which reuses the NSG Flow Logs, Traffic Analytics setup, Azure Firewall, and other network resources from Exercise 1 to analyze collected traffic data. Otherwise, it may take 30–40 minutes for data to appear in Traffic Analytics.
+In this task, you will create Virtual network flow logs and these configurations are used in Exercise 5, which reuses the Virtual network Flow Logs, Traffic Analytics setup, Azure Firewall, and other network resources from Exercise 1 to analyze collected traffic data. Otherwise, it may take 30–40 minutes for data to appear in Traffic Analytics.
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and **select (2)** from the suggestions.
 
