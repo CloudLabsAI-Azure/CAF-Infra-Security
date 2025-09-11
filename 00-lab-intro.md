@@ -1,6 +1,6 @@
 # Infrastructure and Application Security 
 
-### Overall Estimated Duration: 8 Hours
+## Overall Estimated Duration: 8 Hours
 
 ## Overview
 
@@ -160,6 +160,6 @@ Learner Support Contacts:
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-![](./images/GS4.png)
+![](./images/infra-app-security-lab1-49.png)
 
-### Happy Learning!!
+## Happy Learning!!

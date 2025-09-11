@@ -1,6 +1,6 @@
 # Exercise 5: Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
-### Estimated Duration: 60 Minutes
+## Estimated Duration: 60 Minutes
 
 ## Overview:
 
@@ -140,4 +140,4 @@ In this exercise, you have covered the following:
   
 - Monitored the network watcher traffic.
 
-### You have successfully completed the lab
+## You have successfully completed the lab!

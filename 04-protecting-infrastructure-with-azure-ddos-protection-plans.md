@@ -1,10 +1,10 @@
 # Exercise 4: Protecting Infrastructure with Azure DDoS Protection Plans
 
-### Estimated Duration: 60 Minutes
+## Estimated Duration: 60 Minutes
 
 ## Overview
 
-### What is DDoS protection?
+## What is DDoS protection?
 
 Distributed denial of service (DDoS) attacks are some of the largest availability and security concerns facing customers who are moving their applications to the cloud. A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the Internet.
 
@@ -68,7 +68,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
  
 1. On the DDoS protection page, under the **Settings** tab, select **Protected resources (1)** then **VNET (2)** and click on **+ Add (3)**.
  
-      ![](images/ddos10.png)
+      ![](images/infra-app-security-lab1-040.png)
 
 1. On the **Add virtual network to DDoS plan** blade, provide the information as mentioned below,
     
@@ -86,15 +86,20 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
  
       ![](images/ddos9.png)
  
-1. Now, In the Azure portal, search **Firewall Manager (1)** and then select **Firewall Manager  (2)**.
+1. Navigate to the home page in the Azure portal, search for **Firewalls (1)** and select **Firewalls (2)** from suggestions.
  
-      ![](images/upd-27.png)
-
-1. Under the **Secure your resources** tab, click on **Virtual Networks**, and you will see that you are protected.
+    ![](images/infra-app-security-lab1-35.png)
  
-      ![](images/upd-37.png)
+1. Navigate to **Virtual Networks** under **Secure your resources** section, and you will see that you are protected.
 
+    ![](images/infra-app-security-lab1-41.png)
 
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="d6923ba2-dfed-45e7-bedb-a5e206ea86c0" />
 
 ## Task 2: Configure Azure DDoS IP Protection
 
@@ -126,7 +131,7 @@ In this task, you will explore and visualize the metrics using various kinds of 
 
 1. Navigate back to the **firewallIP** page, Under Monitoring, select **Metrics**.
 
-    ![](images/a40.png)
+    ![](images/infra-app-security-lab1-43.png)
 
 1. Select **Add metric** then **Scope**.
 
@@ -152,4 +157,4 @@ In this exercise, you have covered the following:
 - Configured Azure DDoS IP Protection
 - Visualized the metrics using a Public IP address
 
-### Click on **Next >>** to proceed with next exercise.
+## Click on **Next >>** to proceed with next exercise.

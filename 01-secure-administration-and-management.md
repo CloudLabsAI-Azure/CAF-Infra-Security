@@ -1,6 +1,6 @@
 # Exercise 1: Secure administration and management
 
-### Estimated Duration: 120 Minutes
+## Estimated Duration: 120 Minutes
 
 ## Overview
 
@@ -17,7 +17,7 @@ You will be able to complete the following tasks:
 - Task 1: Network Health
 - Task 2: Network Topology
 - Task 3: Secure Access via Bastion Host
-- Task 4: Prepare the Network Watcher monitoring environment and NSG Flow
+- Task 4: Prepare the Network Watcher monitoring environment and Virtual network Flow
   
 ## Task 1: Network Health
 
@@ -61,11 +61,11 @@ In this task, you'll explore Azure Monitor and examine the resource health of va
 
 1. From the sidebar, select **Topology** from Monitoring.
 
-   ![](images/cafinfa2.jpg "search gateway")
+   ![](images/infra-app-security-lab1-1.png "search gateway")
 
 1. On the **Topology** page, click on the **Scope** **(1)**.
 
-   ![](./images/infrasec.png)
+   ![](./images/infra-app-security-lab1-2.png)
 
 1. Under the **Select Scope** choose the **All subscriptions selected** **(1)** for Subscriptions, **All resource groups selected** **(2)** for Resource Groups, and **<inject key="Region" />** **(3)** for the Locations and then click on **Save**.
 
@@ -95,7 +95,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
    
    ![](images/E1T3S3.png "search gateway")
 
-1. You will see that **AzureBastionSubnet** is already present in the subnets. If you want to see the subnet configuration, then you can click on the AzureBastionSubnet subnet and explore this.
+1. You will see that **AzureBastionSubnet** is already present in the subnets. If you want to see the subnet configuration, then you can click on the **AzureBastionSubnet** subnet and explore this.
 
    ![](images/upd-021.png "search gateway")
 
@@ -109,7 +109,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 1. On the Virtual Machine page, click on **Connect (1)** under **Connect** section and then click on **Go to Bastion (2)**.
  
-   ![](images/updateimg-5.png)
+   ![](images/infra-app-security-lab1-3.png)
  
 1. On the Bastion page, follow the instructions below to connect to the Virtual Machine using Bastion:
 
@@ -131,13 +131,13 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
  
     ![](images1/allowpopup.png)
 
-## Task 4: Prepare the Network Watcher monitoring environment and NSG Flow
+## Task 4: Prepare the Network Watcher monitoring environment and Virtual network Flow
 
-**NSG Diagnostic Logs** provide detailed information about the health and performance of a Network Security Group. These logs include data related to the configuration changes, rules evaluation, and the overall state of the NSG. Diagnostic Logs can help identify issues with NSG rules, detect unauthorised access attempts, and monitor the NSG's behaviour.
+**Virtual network Diagnostic Logs** are platform logs in Azure that capture information about operations and events within an Azure Virtual Network (VNet) and its related resources (such as subnets, network security groups, and route tables).
 
-**NSG Flow Logs** capture information about the network traffic flowing through a Network Security Group. They provide visibility into the network communications and can be used for analyzing network behaviour, detecting threats, and investigating security incidents.
+**Virtual network flow logs** support connecting at the virtual network, subnet, and network interface level. They provide visibility into the network communications and can be used for analyzing network behaviour, detecting threats, and investigating security incidents.
 
-In this task, you will create NSG flow logs and these configurations are used in Exercise 5, which reuses the NSG Flow Logs, Traffic Analytics setup, Azure Firewall, and other network resources from Exercise 1 to analyze collected traffic data. Otherwise, it may take 30–40 minutes for data to appear in Traffic Analytics.
+In this task, you will create Virtual network flow logs and these configurations are used in Exercise 5, which reuses the Virtual network Flow Logs, Traffic Analytics setup, Azure Firewall, and other network resources from Exercise 1 to analyze collected traffic data. Otherwise, it may take 30–40 minutes for data to appear in Traffic Analytics.
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and **select (2)** from the suggestions.
 
@@ -155,13 +155,13 @@ In this task, you will create NSG flow logs and these configurations are used in
 
     ![](images/E1T4S4.png)
 
-1. In the Create a flow log page, select the **default subscription (1)**, **Network security group (2)** as Flow log type, and **Network security group (4)** as a Select target resource.
+1. In the Create a flow log page, select the **default subscription (1)**, **Virtual network (2)** as Flow log type, select dropdown button beside **+ Select target resource (3)** then choose **Virtual network (4)** as a Select target resource.
 
-    ![](images/E1T4S6.png)
+    ![](images/infra-app-security-lab1-44.png)
 
-1. In the Select network security group page, select **FirewallVM-nsg** **(1)** and click on **Confirm selection (2)**.
+1. In the **Select Virtual network** page, select **vnet** **(1)** and click on **Confirm selection (2)**.
 
-    ![](images/updateimg-10.png)
+    ![](images/infra-app-security-lab1-45.png)
 
 1. For the Instance details, provide the following details and click on **Next: Analytics > (4)**
 
@@ -171,17 +171,17 @@ In this task, you will create NSG flow logs and these configurations are used in
 
    - **Retention (days):** **30 (3)**
 
-       ![](images/E1T4S7.png)  
+       ![](images/infra-app-security-lab1-46.png)  
    
-1. Under the **Analytics** tab, check the box to **Enable traffic analytics (1)**, select **Every 10 mins (2)** under the Traffic analytics processing interval and click **Review + create (3)**.
+1. Under the **Analytics** tab, check the box to **Enable traffic analytics (1)**, select **Every 10 mins (2)** under the **Traffic analytics processing interval** and click **Review + create (3)**.
 
-    ![create](images/a149-1.png)
+    ![create](images/infra-app-security-lab1-47.png)
 
 1. On the Review + create tab, review the summary and click on **Create** button.
 
    >**Note:** The deployment might take a few minutes to complete. Wait till the deployment is completed before proceeding to the next step.
 
-   ![](images/E1T4S9.png)  
+   ![](images/infra-app-security-lab1-48.png)  
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and **select (2)** from the suggestions.
 
@@ -205,10 +205,16 @@ In this task, you will create NSG flow logs and these configurations are used in
 
    - **Logs -> Category groups:** check the **allLogs (2)** checkbox.
 
-   - **Destination details:** Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox, and click on **Save (5)**. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for a storage account.
+   - **Destination details:** Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox, and click on **Save (5)**. Make sure the default subscription is selected for subscription and **nsglogs<inject key="DeploymentID" enableCopy="false" />** for the storage account.
 
       ![](images/E1T4S15.png)
 
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="f287d359-99b1-4b6c-8519-647983bf4a68" />
 
 
 ## Summary
@@ -220,4 +226,4 @@ In this exercise, you have covered the following:
 - Secured Access via Bastion Host
 - Configured the Network Watcher monitoring environment and NSG Flow
 
-### Click on **Next >>** to proceed with next exercise.
+## Click on **Next >>** to proceed with next exercise.

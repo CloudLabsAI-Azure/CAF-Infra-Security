@@ -1,6 +1,6 @@
 # Exercise 2: Secure application 
 
-### Estimated Duration: 120 Minutes
+## Estimated Duration: 120 Minutes
 
 ## Overview
 
@@ -40,7 +40,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
      
  1. On the **Edit backend pool** page, follow the instructions below:
 
-    - **Target type:** Select **Virtual Machine (1)** from the drop-down.
+    - **Target type:** Select **Virtual machine (1)** from the drop-down.
 
     - **Target:** Select **FirewallVM-nic (2)** from drop-down.
 
@@ -52,7 +52,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
 
    ![](images/editbackendpool-succeeded.png)
 
-1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall Policies (WAF) (2)**.
+1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall policies (WAF) (2)**.
 
    ![](images1/firewallpolicies.png)
  
@@ -110,7 +110,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
     ![](images/a156.png "select gateway")
  
-1. On the **Compute Infrastructure | Virtual machines page**, select **labvm-<inject key="Deployment ID" enableCopy="false"/>**.
+1. On the **Compute infrastructure | Virtual machines page**, select **labvm-<inject key="Deployment ID" enableCopy="false"/>**.
 
     ![](images/E2T3S2.png "select gateway")
 
@@ -128,7 +128,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
 1. Select **Custom rules (1)** under the **Settings** section, then click on **+ Add custom rule (2)**.
  
-    ![](images/E2T3S6.png "select gateway")
+    ![](images/infra-app-security-lab1-4.png "select gateway")
  
 1. On the **Add custom rule** blade, enter the following details:
  
@@ -142,11 +142,11 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
     
     - Click on **Add (5)**.
  
-      ![](images/a159-1.png "select gateway")
+      ![](images/infra-app-security-lab1-5.png "select gateway")
  
 1. Click on **Save**.
  
-   ![](images/a171.png "select gateway")
+   ![](images/infra-app-security-lab1-6.png "select gateway")
 
 1. Once the custom rule is created, you will see the notification that says **Successfully updated the WAF policy**, as shown below.
  
@@ -162,13 +162,13 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
      
     - Click on **firewallpolicy (2)** under **Associated web application firewall policy**.  
   
-      ![config](images/E2T3S11.png)
+      ![config](images/infra-app-security-lab1-7.png)
  
 1. On the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
 
    >**Note:** Wait for the firewall policy to get updated before proceeding to the next step.
  
-    ![](images/E2T4S5.png)
+    ![](images/infra-app-security-lab1-8.png)
 
 1. Navigate back to the browser tab where you accessed the application gateway website and **refresh** the tab; you will no longer be able to see the website.
 
@@ -178,9 +178,14 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
 1. Navigate back to **firewallpolicy** page, go to the **Overview (1)** blade and click on **Switch to detection mode (2)**.
 
-   ![](images/E2T3S14.png "select gateway")
+   ![](images/infra-app-security-lab1-9.png "select gateway")
 
-
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="09e5a606-3e3a-4e3a-bc6b-93380fcde756" />
 
 ## Task 4: Attack simulation
      
@@ -234,17 +239,17 @@ In this task, you will set up an Azure Front Door configuration that pools two i
 
 Configure Azure Front Door to direct user traffic based on the lowest latency between the two Web Apps' origins. You'll also secure your Azure Front Door with a Web Application Firewall (WAF) policy.
   
-1. In the Azure portal, search for **Front Door (1)** and select **Front Door and CDN profiles (2)** from the results.
+1. In the Azure portal, search for **Front Doors (1)** and select **Front Doors (2)** from the results.
   
-    ![](images1/infra-app-security-mayupdate-1.png)
+    ![](images/infra-app-security-lab1-10.png)
   
-1. Select **+ Create** to create a Front Door and CDN profile.
+1. Select **+ Create** to create a Front.
   
-    ![](images/E2T5.1S2.png)
+    ![](images/infra-app-security-lab1-11.png)
 
-1. On the **Compare offerings** page, select **Custom create**. Then select **Continue to create a Front Door**.
+1. On the **Compare offerings** page, select **Custom create (1)**. Then select **Continue to create a Front Door (2)**.
   
-    ![](images/a55.png)
+    ![](images/infra-app-security-lab1-12.png)
   
 1. On the **Basics** tab, enter or select the following information, and then select **Next: Secret > (5)**.
   
@@ -256,7 +261,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
     | Name                        | Enter **Webapp-Contoso-AFD (3)**                                  |
     | Tier                        | Select **Premium (4)**                                            |
   
-    ![](images/E2T5S4.png)
+    ![](images/infra-app-security-lab1-13.png)
   
 1. On the **Secrets** tab, Leave it default as same and click on **Next: Endpoint >**.
   
@@ -268,7 +273,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
 
 1. Now, name the endpoint as **contoso-frontend (1)** and click on **Add (2)** to add the endpoint.
   
-    ![](images/E2T5.1S7.png)
+    ![](images/infra-app-security-lab1-14.png)
   
 1. On the same page, select **+ Add a route** to configure routing to your Web App origin.
   
@@ -313,7 +318,14 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
     ![](images/a61.png)
    
     ![](images/upd-022.png)
-  
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="cc732f3b-1c39-4339-b1c4-b43b2b31b193" />
+
 ### Task 5.2: View Azure Front Door in action
   
 Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
@@ -380,7 +392,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. On the **myWAFPolicy** page, under **Settings**, select **Custom rules (1)**, then click **+ Add custom rule (2)**.
   
-    ![](images/a75.png)
+    ![](images/infra-app-security-lab1-15.png)
   
 1. On the **Add custom rule** blade, enter the following details
  
@@ -414,7 +426,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. Return to the **Overview** page of **myWAFPolicy**, then select **Switch to prevention mode** to update the policy's operating mode.
 
-    ![](images/E2T5-3S10.png)
+    ![](images/infra-app-security-lab1-16.png)
 
     >**Note:** Wait for the firewall policy to get updated before proceeding to the next step.
 
@@ -444,4 +456,4 @@ In this exercise, you have covered the following:
 - Performed Attack simulation
 - Performed Rate Limiting using Azure Front Door
 
-### Click on **Next >>** to proceed with next exercise.
+## Click on **Next >>** to proceed with next exercise.
