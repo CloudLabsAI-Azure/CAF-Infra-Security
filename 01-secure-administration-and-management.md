@@ -17,7 +17,7 @@ You will be able to complete the following tasks:
 - Task 1: Network Health
 - Task 2: Network Topology
 - Task 3: Secure Access via Bastion Host
-- Task 4: Prepare the Network Watcher monitoring environment and NSG Flow
+- Task 4: Prepare the Network Watcher monitoring environment and Virtual network Flow
   
 ## Task 1: Network Health
 
