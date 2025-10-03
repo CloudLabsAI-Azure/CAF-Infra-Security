@@ -20,7 +20,7 @@ You will be able to complete the following tasks:
 
 In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
-1. Navigate to the Azure portal. Using the search bar, search for **Application gateways (1)** and **select (2)** from the suggestions..
+1. Navigate to the Azure portal. Using the search bar, search for **Application gateways (1)** and **Application gateways (2)** from the suggestions..
  
      ![](images/searchgateway.png "search gateway")
  
@@ -32,7 +32,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
      ![](images/upd-41.png "select gateway")
   
- 1. Copy the **Public IP address** and save it to Notepad for later use.
+ 1. Copy the **Public IP address** and save it to **Notepad** for later use.
 
      ![](images/upd-42.png )
 
@@ -48,7 +48,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
    ![loadbalancer](images/upd-45.png)
    
-1. Select **Firewall Public IP** from the Overview tab.
+1. Select **Firewall Public IP** from the **Overview** tab.
 
     ![pip](images/upd-46.png)
     
@@ -64,7 +64,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
    ![](images/updateimg-26.png)
 
-1. Once you're on the Network Watcher page, go to the left-hand menu under the **Monitoring** section and click on **Traffic Analytics**.
+1. Once you're on the **Network Watcher** page, from the left pane under the **Monitoring** section and click on **Traffic Analytics**.
    
    ![](images/updateimg-27.png)
       
