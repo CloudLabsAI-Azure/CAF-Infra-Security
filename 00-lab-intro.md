@@ -4,7 +4,7 @@
 
 ## Overview
 
-Cloud Security in the context of Microsoft Azure infrastructure and application security involves implementing a comprehensive set of practices and tools to protect data, applications, and infrastructure hosted on the Azure platform. This includes securing virtual machines, networks, and storage through built-in security features like Azure Firewall, Network Security Groups, and encryption. Azure also provides robust identity and access management through Azure Active Directory, ensuring that only authorized users can access resources. Additionally, Azure's security tools, such as Azure Security Center and Azure Sentinel, offer continuous monitoring, threat detection, and automated response capabilities to safeguard against vulnerabilities and attacks. Adhering to these practices helps maintain a secure cloud environment, ensuring data integrity, confidentiality, and compliance with regulatory standards.
+Cloud Security in the context of Microsoft Azure infrastructure and application security involves implementing a comprehensive set of practices and tools to protect data, applications, and infrastructure hosted on the Azure platform. This includes securing virtual machines, networks, and storage through built-in security features like Azure Firewall, Network Security Groups, and encryption. Azure also provides robust identity and access management through Entra ID, ensuring that only authorized users can access resources. Additionally, Azure's security tools, such as Defender for Cloud and Microsoft Sentinel, offer continuous monitoring, threat detection, and automated response capabilities to safeguard against vulnerabilities and attacks. Adhering to these practices helps maintain a secure cloud environment, ensuring data integrity, confidentiality, and compliance with regulatory standards.
 
 ## Objective
 
@@ -30,12 +30,12 @@ Participants should have the following prerequisites:
 - **Fundamentals of Cybersecurity:** Understanding of general cybersecurity principles, including concepts such as firewalls, encryption, and identity management.
 - **Experience with Azure Portal:** Proficiency in navigating and using the Azure Portal for managing resources and configurations.
 - **Networking Basics:** Knowledge of networking concepts, including IP addressing, subnets, and virtual networks, as they relate to cloud environments.
-- **Familiarity with Identity and Access Management (IAM):** Understanding of IAM concepts, such as user roles, permissions, and Azure Active Directory.
+- **Familiarity with Identity and Access Management (IAM):** Understanding of IAM concepts, such as user roles, permissions, and Entra ID.
 - **Understanding of Security Best Practices:** Awareness of security best practices and compliance requirements specific to cloud environments.
 
 ## Architechture
 
-Various Azure resources and services are integrated to provide a comprehensive security framework. At the core, **Azure Virtual Machines** and **Azure Virtual Networks** are protected using **Azure Firewall** and **Network Security Groups** to control and monitor traffic. **Microsoft Entra ID** (formerly know as Azure Active Directory (AAD)) manages identity and access, ensuring secure authentication and authorization. **Azure Security Center** offers unified security management and advanced threat protection across the Azure environment. **Azure Sentinel** provides intelligent security analytics and threat detection through a cloud-native SIEM (Security Information and Event Management) system. Data protection is enhanced using **Azure Key Vault** for managing secrets and **Azure Encryption** services to safeguard data at rest and in transit. Together, these resources create a layered security approach to defend against a wide range of cyber threats and ensure compliance with security policies and regulations.
+Various Azure resources and services are integrated to provide a comprehensive security framework. At the core, **Azure Virtual Machines** and **Azure Virtual Networks** are protected using **Azure Firewall** and **Network Security Groups** to control and monitor traffic. **Microsoft Entra ID** manages identity and access, ensuring secure authentication and authorization. **Defender for Cloud** offers unified security management and advanced threat protection across the Azure environment. **Microsoft Sentinel** provides intelligent security analytics and threat detection through a cloud-native SIEM (Security Information and Event Management) system. Data protection is enhanced using **Azure Key Vault** for managing secrets and **Azure Encryption** services to safeguard data at rest and in transit. Together, these resources create a layered security approach to defend against a wide range of cyber threats and ensure compliance with security policies and regulations.
 
 ## Architecture Diagram
 
@@ -117,9 +117,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
    >**NOTE:** Do not enable MFA. Select **Ask Later**.
 
-6. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
-
-7. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
+6. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
 ## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
 
@@ -146,6 +144,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 1. If prompted to stay signed in, you can click **No**.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
+
    ![](images/gs1313.png)
 
 ## Support Contact
