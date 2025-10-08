@@ -28,7 +28,7 @@ In this task, you will review and monitor the NSG flow logs in the Traffic Analy
    
    ![](images/updateimg-27.png)
       
-1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
+1. On the **Traffic Analytics** page, set the **Time interval** to **Last 30 minutes** and the **Flow log type** to **VNet**.
 
    ![](images/081025(11).png)
    
