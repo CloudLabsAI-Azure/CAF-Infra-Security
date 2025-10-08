@@ -1,6 +1,6 @@
 # Exercise 2: Secure application 
 
-## Estimated Duration: 120 Minutes
+### Estimated Duration: 120 Minutes
 
 ## Overview
 

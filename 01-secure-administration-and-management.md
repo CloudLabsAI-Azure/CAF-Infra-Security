@@ -1,6 +1,6 @@
 # Exercise 1: Secure administration and management
 
-## Estimated Duration: 120 Minutes
+### Estimated Duration: 120 Minutes
 
 ## Overview
 

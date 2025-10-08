@@ -1,6 +1,6 @@
 # Exercise 4: Protecting Infrastructure with Azure DDoS Protection Plans
 
-## Estimated Duration: 60 Minutes
+### Estimated Duration: 60 Minutes
 
 ## Overview
 
