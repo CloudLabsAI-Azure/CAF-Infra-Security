@@ -117,13 +117,13 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
     ![](images/upd-025.png)
 
-1. Once you click on **Protect**, under **Protection type**, select **IP** and click on **Save**.
+1. Once you click on **Protect**, under **Protection type**, select **IP (1)**, check **Add to existing DDoS Protection plan (2)**, choose **DDoSProtection (3)** from the dropdown, and click **Save (4)**.
 
-    ![](images/a175.png)
+    ![](images/081025(9).png)
 
 1. In the **Overview (1)** pane, select the **Properties (2)** tab. Under **DDoS protection (3)**, you will see that your public IP address is protected by **IP protection** as shown below.
 
-    ![](images/upd-026.png)
+    ![](images/081025(10).png)
     
 ## Task 3: View metrics from Public IP address
 
