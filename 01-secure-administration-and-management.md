@@ -67,9 +67,9 @@ In this task, you'll explore Azure Monitor and examine the resource health of va
 
    ![](./images/infra-app-security-lab1-2.png)
 
-1. Under the **Select Scope** choose the **All subscriptions selected** **(1)** for Subscriptions, **All resource groups selected** **(2)** for Resource Groups, and **<inject key="Region" />** **(3)** for the Locations and then click on **Save**.
+1. Under the **Select Scope** pane, choose the **All subscriptions selected** **(1)** for Subscriptions, **All resource groups selected** **(2)** for Resource Groups, and **<inject key="Region" />** **(3)** for the Locations and then click on **Save (4)**.
 
-   ![](./images/selectscope.png)
+   ![](./images/081025(1).png)
 
 1. Hover the mouse on the location pointer inside **Geo Map** and then click **Expand** to see the topology.
 
