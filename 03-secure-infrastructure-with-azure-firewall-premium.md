@@ -208,7 +208,7 @@ In this task, you will test IDPS for HTTP traffic.
 
     >**Note:** Wait for a few minutes for the policy to get updated.
 
-1. Navigate back to JumpVM and run the `curl` command again:
+1. Navigate back to FirewallVM and run the `curl` command again:
 
     `curl -A "HaxerMen" <Firewall Public IP>`
 
@@ -386,13 +386,13 @@ In this task, you will create an application rule to allow access to sports webs
 
 ## Task 4: Implement and Test URL filtering
  
-1. Navigate back to the tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **Hmmm... can't reach this page**.
+1. Navigate back to the tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **Action: Deny. Reason: No rule matched. Proceeding with default action.**
  
     ```
-    www.hindustantimes.com
+    https://www.hindustantimes.com/world-news/us-news
     ```
  
-    ![](images/updateimg-30.png)
+    ![](images/081025(7).png)
   
 1. Switch back to the other tab where the **Azure Portal** is open. In your **FirewallVM-rg** resource group, select **firewallpolicy**.
 
@@ -416,7 +416,7 @@ In this task, you will create an application rule to allow access to sports webs
       - Protocol: Enter **http,https**
       - TLS inspection: Check TLS inspection
       - Destination Type: Select **URL**
-      - Destination: Enter `www.hindustantimes.com`
+      - Destination: Enter `www.hindustantimes.com/world-news/us-news`
      
      - Click on **Add (6)**
  
