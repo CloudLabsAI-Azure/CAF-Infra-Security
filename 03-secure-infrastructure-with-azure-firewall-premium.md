@@ -330,6 +330,8 @@ In this task, you will create an application rule to allow access to sports webs
 
       >**Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to the next steps.
 
+      >**Note:** If the TLS deployment fails, please delete the **Managed Identity** and **Key Vault** from the resource group, then retry the deployment. What usually happens is that during deployment, the Key Vault and Managed Identity are created, and permissions are assigned to the Managed Identity. Occasionally, due to slight delays on Azure’s side, these permissions might take a little longer to apply, which can cause the deployment to fail. Retrying usually resolves the issue smoothly.
+
 1. Now, select **Application Rules (1)** from the **Rules** tab on the **Firewall Policy** page, then click **+ Add a rule collection (2)**.
    
     ![](images/infra-app-security-lab1-28.png "search gateway")
