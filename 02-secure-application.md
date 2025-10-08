@@ -128,7 +128,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
 1. Select **Custom rules (1)** under the **Settings** section, then click on **+ Add custom rule (2)**.
  
-    ![](images/infra-app-security-lab1-4.png "select gateway")
+    ![](images/081025(5).png "select gateway")
  
 1. On the **Add custom rule** blade, enter the following details:
  
@@ -146,7 +146,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
  
 1. Click on **Save**.
  
-   ![](images/infra-app-security-lab1-6.png "select gateway")
+   ![](images/081025(6).png "select gateway")
 
 1. Once the custom rule is created, you will see the notification that says **Successfully updated the WAF policy**, as shown below.
  
