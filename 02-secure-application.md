@@ -56,13 +56,13 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
 
    ![](images1/firewallpolicies.png)
  
-1. On the Web Application Firewall page, click on **Firewall policy**, then navigate to the **Settings** section and select **Associated application gateways**.
+1. On the **Network security | Web Application Firewall** page, click on **Firewall policy**.
 
-   ![](images/E2T1S7.png)
-     
-1. On the **Associated application gateways** page, click on **+ Add association (1)** and select **Application Gateway (2)**
+   ![](images/081025(2).png)
 
-    ![](images/E2T1S8.png)
+1. Navigate to **Settings > Associations (1)**, click **+ Add Association (2)**, and select **Application Gateway (3)**.
+
+    ![](images/081025(3).png)
     
 1. Under the **Associate an application gateway** page, follow the instructions below:
 
@@ -88,7 +88,7 @@ In this task, you will access the application by going through the Application G
  
 1. Select your **Application Gateway**.
  
-     ![](images/E2T1S2.png "search gateway")
+    ![](images/081025(4).png)
  
 1. Select the **Frontend public IP address** of the application gateway.
  
