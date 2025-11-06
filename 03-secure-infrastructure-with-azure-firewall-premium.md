@@ -41,14 +41,14 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/E3T1S3.png "search gateway")
 
-1. Now you should be able to see the **Enable Azure Firewall Structured Logs (1)** is already registered by default.
+1. Now you should be able to see the **Enable Azure Firewall Structured Logs** is already registered by default.
 
-    ![](images/E3T1S4.png "search gateway")
+      ![](images/E3T1S4.png "search gateway")
 
 
-    > **Note:** If the preview feature is not registered, Select **Enable Azure Firewall Structured Logs (1)** then click on **Register (2)**. On the **Do you want to register the selected features?** pop-up, choose **OK**.
+      > **Note:** If the preview feature is not registered, Select **Enable Azure Firewall Structured Logs (1)** then click on **Register (2)**. On the **Do you want to register the selected features?** pop-up, choose **OK**.
 
-    ![](images/scafinfra22-1.png "search gateway")
+      ![](images/scafinfra22-1.png "search gateway")
 
 1. In the Azure portal, navigate to your **FirewallVM-rg** resource group and select the **AzureFirewall** resource.
 
