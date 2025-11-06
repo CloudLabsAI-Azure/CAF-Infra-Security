@@ -22,15 +22,15 @@ In this task, you will review and monitor the NSG flow logs in the Traffic Analy
 
 1. In the Azure portal, search for **Network Watcher** and select it.
 
-   ![](images/updateimg-26.png)
+   ![](images/E5T1S1.png)
 
 1. Once you're on the Network Watcher page, go to the left-hand menu under the **Monitoring** section and click on **Traffic Analytics**.
    
-   ![](images/updateimg-27.png)
+   ![](images/E5T1S2.png)
       
 1. On the **Traffic Analytics** page, set the **Time interval** to **Last 30 minutes** and the **Flow log type** to **VNet**.
 
-   ![](images/081025(11).png)
+   ![](images/E5T1S3.png)
    
    > **Note: If you observe the Time interval is greyed out, click on Meanwhile, click here to see just resource data and perform the above step**.
    
@@ -46,15 +46,15 @@ In this task, you will review and monitor the NSG flow logs in the Traffic Analy
            
 1. Under **Traffic Analytics**, Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **Talking to Internet (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
 
-    ![](images/081025(13).png)
+    ![](images/E5T1S5.png)
       
 1. To visualize the traffic distribution by geography, click on **View map**. The geo-map shows the traffic distribution to a data center from countries/regions and continents communicating with it.
 
-    ![](images/081025(14).png)
+    ![](images/E5T1S6.png)
      
 1. In the **Traffic Analytics Geo Map View** page, click on the **Green** icon which indicates the Azure region, and observe the resources deployed under the region, to explore more select **More details**.
 
-    ![](images/081025(15).png)
+    ![](images/E5T1S7.png)
       
 1. Under the **More Insights** blade, scroll down and explore traffic distribution for deployments of the East US region.
 
@@ -68,11 +68,11 @@ In this task, you will review and monitor the NSG flow logs in the Traffic Analy
       
 1. Under the Traffic Analytics page, scroll down to **Traffic Distribution** to view the analytics of traffic flows across the host, subnet, VNet, and VMSS.
 
-    ![](images/081025(18).png)
+    ![](images/E5T1S11.png)
      
 1. To view the analytics of traffic flows across the host, select **IP (1)**, then select **See all (2)** from **Traffic Distribution**.
 
-    ![](images/081025(19).png)
+    ![](images/E5T1S12.png)
     
 1. You can observe the graph of the **Time trending chart for the top 5 talking IPs** from the **Traffic distribution across the top IPs** page.
 
@@ -88,7 +88,7 @@ In this task, you will review and monitor the NSG flow logs in the Traffic Analy
 
 1. Now scroll down to **Application ports (1)**, to view analytics for application ports utilized across your environment and select **See all (2)**.
 
-    ![](images/081025(22).png)
+    ![](images/E5T1S17.png)
      
 1. From the **Most frequent L7 protocols** page, you can explore more about the ports and their ranging.
 
@@ -105,3 +105,7 @@ In this exercise, you have covered the following:
 - Monitored the network watcher traffic.
 
 ## You have successfully completed the lab!
+
+## Conclusion
+ 
+By completing this lab, you will gain hands on expertise in securing Azure-based applications and infrastructure using advanced tools such as Azure WAF, Application Gateway, Firewall Premium, and DDoS Protection Plans. The hands-on experience reinforces best practices in secure administration, application hardening, and proactive threat mitigation. Through effective monitoring with Flow Logs and Traffic Analytics, participants learn to maintain visibility, strengthen network defenses, and ensure a resilient, well-protected Azure environment.
