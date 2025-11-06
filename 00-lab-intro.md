@@ -99,17 +99,17 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-      ![](./images/GS2.png "Enter Email")
+      ![](./images/GS3.png "Enter Email")
  
 3. Next, provide your password:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-      ![](./images/GS3.png "Enter Password")
+      ![](./images/GS4.png "Enter Password")
  
 4. If you see the pop-up **Stay Signed in?**, click **No**.
 
-   ![](./images/GS9.png)
+   ![](./images/GS5.png)
 
 5. If you see the pop-up **Action Required**, leave it as default and then click on **Ask later**. Next, on the **Help us protect your account** pop-up click on **Skip for now** (14 days until this is required), and then select **Next**.
 

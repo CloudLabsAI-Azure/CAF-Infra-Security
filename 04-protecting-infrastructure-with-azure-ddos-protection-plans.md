@@ -32,11 +32,11 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
 1. In the Azure portal, search **DDoS protection plans (1)** and then select **DDoS protection plans (2)**.
  
-   ![](images/ddos1.png)
+   ![](images/E4T1S1.png)
  
 1. Click on **+ Create** to create a DDoS protection plan.
  
-    ![](images/ddos2.png)
+    ![](images/E4T1S2.png)
  
 1. On the **DDoS protection** page, provide the information as mentioned below,
 
@@ -50,11 +50,11 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
    - Click on **Next : Tags > (5)**.
  
-     ![](images/upd-024.png)
+     ![](images/E4T1S3.png)
  
 1. On the **Tags** tab, leave everything to default and then click on **Review + create**.
  
-     ![](images/ddos4.png)
+     ![](images/E4T1S4.png)
   
 1. If the validation is passed, then click on **Create**.
 
@@ -64,7 +64,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
  
 1. Once the DDoS protection is added, you will see a notification that says **Deployment succeeded**, as shown below. Click on **Go to resource**.
 
-      ![](images/upd-011.png)
+      ![](images/E4T1S6.png)
  
 1. On the DDoS protection page, under the **Settings** tab, select **Protected resources (1)** then **VNET (2)** and click on **+ Add (3)**.
  
@@ -80,7 +80,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
     
     - Click on **Add (4)**
    
-      ![](images/upd-012.png)
+      ![](images/E4T1S8.png)
  
 1. Once the Protected resources are added, you will see a notification that says **Successfully updated the virtual network vnet**, as shown below.
  
@@ -111,15 +111,15 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
 1. Select the **firewallIP** from the list.
 
-    ![](images/upd-38.png)
+    ![](images/E4T2S2.png)
 
 1. In the **Overview** pane, you will see **Protect IP address** on the bottom right corner, click on **Protect**.
 
-    ![](images/upd-025.png)
+    ![](images/E4T2S3.png)
 
 1. Once you click on **Protect**, under **Protection type**, select **IP (1)**, check **Add to existing DDoS Protection plan (2)**, choose **DDoSProtection (3)** from the dropdown, and click **Save (4)**.
 
-    ![](images/081025(9).png)
+    ![](images/E4T2S4.png)
 
 1. In the **Overview (1)** pane, select the **Properties (2)** tab. Under **DDoS protection (3)**, you will see that your public IP address is protected by **IP protection** as shown below.
 
@@ -139,15 +139,15 @@ In this task, you will explore and visualize the metrics using various kinds of 
 
 1. Once you click on Scope, select **Public IP addresses (1)** from **Resources type**, then select the specific **Public IP address (2)** you want to log metrics for, and click on **Apply (3)**.
 
-     ![](images/upd-014.png)
+     ![](images/E4T3S3.png)
 
 1. Under **Metric**, select **Inbound SYN packets to trigger DDoS mitigation** then under **Aggregation**, select type as **Count**.
   
-     ![](images/a153.png)
+     ![](images/E4T3S4.png)
 
 1. Follow the previous step to add **Inbound TCP packets to trigger DDoS mitigation** and **Inbound UDP packets to trigger DDoS mitigation**. 
 
-      ![](images/a154.png)
+      ![](images/E4T3S5.png)
       
 ## Summary
  
@@ -158,3 +158,5 @@ In this exercise, you have covered the following:
 - Visualized the metrics using a Public IP address
 
 ## Click on **Next >>** to proceed with next exercise.
+
+![](./images/infra-app-security-lab1-49.png)

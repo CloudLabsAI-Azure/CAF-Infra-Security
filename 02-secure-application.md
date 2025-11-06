@@ -28,7 +28,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
  
  1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
-      ![](images/searchgateway.png "search gateway")
+      ![](images/E2T1S1.png "search gateway")
     
  1. Select your **Application Gateway**.
 
@@ -50,11 +50,11 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
     
 1. Once the Backend pools are saved, you will see the notification that says **Deployment succeeded**.
 
-   ![](images/editbackendpool-succeeded.png)
+   ![](images/E2T1S5.png)
 
 1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall policies (WAF) (2)**.
 
-   ![](images1/firewallpolicies.png)
+   ![](images/E2T1S6.png)
  
 1. On the **Network security | Web Application Firewall** page, click on **Firewall policy**.
 
@@ -76,7 +76,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
 
 1. Once the Application Gateway are saved, you will see the notification that says **Updated the Application Gateway**.
 
-   ![](images1/appgateway-notification.png)
+   ![](images/E2T1S10.png)
 
 ## Task 2: Accessing your application using the application gateway
  
@@ -84,11 +84,11 @@ In this task, you will access the application by going through the Application G
 
 1.  In the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
 
-    ![](images/searchgateway.png "search gateway")
+    ![](images/E2T1S1.png "search gateway")
  
 1. Select your **Application Gateway**.
  
-    ![](images/081025(4).png)
+    ![](images/E2T1S2.png)
  
 1. Select the **Frontend public IP address** of the application gateway.
  
@@ -116,7 +116,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
 1. Copy the **Public IP address** and save it to Notepad for later use.
 
-    ![](images/a158.png "select gateway")
+    ![](images/E2T3S3.png "select gateway")
 
 1. In the Azure Portal Search **WAF (1)** and then select **Web Application Firewall policies (WAF) (2)**.
  
@@ -457,3 +457,5 @@ In this exercise, you have covered the following:
 - Performed Rate Limiting using Azure Front Door
 
 ## Click on **Next >>** to proceed with next exercise.
+
+![](./images/infra-app-security-lab1-49.png)

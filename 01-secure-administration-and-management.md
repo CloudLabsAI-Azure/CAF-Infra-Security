@@ -33,23 +33,23 @@ In this task, you'll explore Azure Monitor and examine the resource health of va
    
 1. On the **Network health** tab, you can customize the resource health and alerts view using filters such as **Subscription**, **Resource Group**, and **Type**. You can also use the search box to find resources and their associated resources. For example, a public IP may be associated with an application gateway. A search for the public IP's DNS name will return both the public IP and the associated application gateway.
 
-   ![](images/a5-1.png "search gateway")
+   ![](images/E1T1S3.png "search gateway")
 
 1. In this, each tile represents a resource's health. The tile displays the number of instances of that resource health deployed across all selected subscriptions. 
 
-   ![](images/a12-1.png "search gateway")
+   ![](images/E1T1S4.png "search gateway")
 
 1. You can click on any resource to select the resource view. The resource view helps you visualize how a resource is configured. The resource view is currently available for **Azure Application Gateway**, **Azure Firewall**, and **Bastions**. For example, for Application Gateway, you can access the resource view by selecting the Application Gateway resource name in the metrics grid view. You can do the same thing for Azure Firewall and Bastions.
 
-   ![](images/a146-1.png "search gateway")
+   ![](images/E1T1S5.png "search gateway")
 
 1. Click on the **Throughput** icon next to the location to bring up the Metrics.
    
-    ![](images/a147.png "search gateway")
+    ![](images/E1T1S6.png "search gateway")
      
 1. You will see the **Metrics** as given below:
 
-    ![](images/a13.png "search gateway")
+    ![](images/E1T1S7.png "search gateway")
 
 ## Task 2: Network Topology
 
@@ -73,11 +73,11 @@ In this task, you'll explore Azure Monitor and examine the resource health of va
 
 1. Hover the mouse on the location pointer inside **Geo Map** and then click **Expand** to see the topology.
 
-   ![](./images/hover.png)
+   ![](./images/E1T2S5.png)
 
 1. Now, you'll be able to **Visualize (1)** the topology. You can explore the different connections to understand how different resources, such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
 
-   ![](images/updateimg-3.png "search gateway")
+   ![](images/E1T2S6.png "search gateway")
 
 ## Task 3: Secure Access via Bastion Host
 
@@ -97,7 +97,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 1. You will see that **AzureBastionSubnet** is already present in the subnets. If you want to see the subnet configuration, then you can click on the **AzureBastionSubnet** subnet and explore this.
 
-   ![](images/upd-021.png "search gateway")
+   ![](images/E1T3S4.png "search gateway")
 
 1. Now, using the search bar, search for **Virtual machines (1)** and **select (2)** from the suggestions.
 
@@ -185,7 +185,7 @@ In this task, you will create Virtual network flow logs and these configurations
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and **select (2)** from the suggestions.
 
-    ![](images/cafinfra5.jpg)
+    ![](images/E1T4S10.png)
 
 1. Select the **FirewallVM-rg** from the list.
 
@@ -197,7 +197,7 @@ In this task, you will create Virtual network flow logs and these configurations
 
 1. From the sidebar, select **Diagnostic settings (1)** under monitoring and click on **+ Add diagnostic setting (2)**.
 
-    ![](images/updateimg-11.png)
+    ![](images/E1T4S13.png)
 
 1. In the Diagnostic settings page, provide the following details.
 
@@ -227,3 +227,5 @@ In this exercise, you have covered the following:
 - Configured the Network Watcher monitoring environment and NSG Flow
 
 ## Click on **Next >>** to proceed with next exercise.
+
+![](./images/infra-app-security-lab1-49.png)

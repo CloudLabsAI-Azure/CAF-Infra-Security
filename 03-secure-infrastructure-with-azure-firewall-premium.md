@@ -31,19 +31,24 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
 1. Navigate to the home page in the Azure portal, search for **Subscriptions (1)** and **select (2)** from suggestions.
 
-   ![](images/scafinfra19.jpg "search gateway")
+   ![](images/E3T1S1.png "search gateway")
 
 1. Select the **default subscription** available in the list.
 
-   ![](images/scafinfra20-1.png "search gateway")
+   ![](images/E3T1S2.png "search gateway")
 
 1. From the left-side blade, select **Preview features (1)** under Settings and select **Microsoft.Network (2)** in the Provider list and click on **Apply (3)**.
 
-   ![](images/scafinfra21-1.png "search gateway")
+   ![](images/E3T1S3.png "search gateway")
 
-1. Select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**. On the **Do you want to register the selected features?** pop-up, choose **OK**.
+1. Now you should be able to see the **Enable Azure Firewall Structured Logs (1)** is already registered by default.
 
-   ![](images/scafinfra22-1.png "search gateway")
+    ![](images/E3T1S4.png "search gateway")
+
+
+    > **Note:** If the preview feature is not registered, Select **Enable Azure Firewall Structured Logs (1)** then click on **Register (2)**. On the **Do you want to register the selected features?** pop-up, choose **OK**.
+
+    ![](images/scafinfra22-1.png "search gateway")
 
 1. In the Azure portal, navigate to your **FirewallVM-rg** resource group and select the **AzureFirewall** resource.
 
@@ -73,7 +78,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
    - Azure Firewall Fat Flow Log
    - Azure Firewall Flow Trace Log
 
-     ![](images/scafinfra23.jpg "search gateway")
+     ![](images/E3T1S9.png "search gateway")
 
 1. Under **Destination details**, select **Send to Log Analytics workspace (1)**, choose **Resource specific (2)** for the Destination table option, and then click **Save (3)**.
 
@@ -87,7 +92,7 @@ In this task, you will test IDPS for HTTP traffic.
 
 1.  In the Azure portal, from the search bar, search for **Application gateways (1)** and then select **Application gateways (2)**.
  
-     ![](images/searchgateway.png "search gateway")
+     ![](images/E2T1S1.png "search gateway")
  
 1. Select your **Application Gateway**.
  
@@ -103,7 +108,7 @@ In this task, you will test IDPS for HTTP traffic.
     
 1. On the Azure Portal **Home** page, search for **Firewalls (1)** and then select **Firewalls (2)**.
 
-   ![firewall](images/Azurefirewallnew-1.png)
+   ![firewall](images/E3T2S5.png)
     
 1. Click on the **AzureFirewall**.
 
@@ -111,15 +116,15 @@ In this task, you will test IDPS for HTTP traffic.
    
 1. Select **Firewall Public IP** from the **Overview** tab.
 
-    ![pip](images/upd-8.png)
+    ![pip](images/E3T2S7.png)
     
 1. Copy the **IP address** and save it to Notepad for later use.
 
-    ![ip](images/upd-9.png)  
+    ![ip](images/E3T2S8.png)  
      
 1. Navigate back to Azure Firewall, select **Firewall Manager (1)** from the **Settings** tab, and click **Visit Azure Firewall Manager to configure and manage this firewall (2)**.
 
-   ![FM](images/firewallmanager-1.png)
+   ![FM](images/E3T2S9.png)
     
 1. Select **Azure Firewall Policies (1)** under **Firewall Manager**, then click on the firewall policy named **firewallpolicy (2)**.
 
@@ -174,11 +179,11 @@ In this task, you will test IDPS for HTTP traffic.
  
 1. On the **AzureFirewall** page, select **Logs (1)** under **Monitoring**, then click on **X (2)**.
 
-    ![](images/logsexit.png)
+    ![](images/E3T2S17.png)
 
 1. Click on **Firewall Logs (Resource Specific Tables - Preview) (1)**, and then click **Run** on **IDPS event logs (2)** to see the logs.
  
-    ![](images/updateimg-34.png "search gateway")
+    ![](images/E3T2S18.png "search gateway")
  
 1. After clicking **Run**, you will see resource-specific logs for IDPS events in **Simple Mode**. To switch to **KQL mode**, change the mode from the top right corner.
  
@@ -231,7 +236,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. In the Azure portal, navigate to your **FirewallVM-rg** resource group and select the Route Table **firewallroute**. 
     
-    ![](images/upd-11.png)
+    ![](images/E3T3S1.png)
  
 1. On the **Route table** page, select **Routes (1)** under **Settings**, then click on **+ Add (2)**.
  
@@ -251,7 +256,7 @@ In this task, you will create an application rule to allow access to sports webs
       
       > **Note**: The **Private IP** address can be found on the **Overview** page of the **AzureFirewall** resource.
 
-      ![](images1/upd-01.png)
+        ![](images/E3T3S3-i.png)
     
     - Select **Add (6)**
  
@@ -267,7 +272,7 @@ In this task, you will create an application rule to allow access to sports webs
      
     - Click on **OK (5)**.
 
-      ![](images/infra-app-security-lab1-26.png)
+      ![](images/E3T3S4.png)
  
 1. Navigate to your **FirewallVM-rg** resource group and select **FirewallVM**. 
  
@@ -402,7 +407,7 @@ In this task, you will create an application rule to allow access to sports webs
 
 1. Select **Application rules (1)** from the **Rules** tab on the Firewall Policy page, then click **+ Add a rule collection (2)**.
  
-    ![](images/mywafppo1.png "search gateway")
+    ![](images/E3T4S3.png "search gateway")
  
 1. Under the **Add a rule collection** page, enter the details below to enable the web application in the Bastion VM:
 
@@ -448,7 +453,7 @@ In this task, you will create an application rule to allow access to sports webs
 
 1. On the **AzureFirewall** page, select **Logs (1)** under the **Monitoring** tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)**, and click **Run (3)** for **Application rule log**. Ensure the mode is set to **KQL mode** to view the query and results.
 
-    ![](images/a124.png)
+    ![](images/E3T4S10i.png)
 
      > **Note:** If you don’t see the logs as expected, it may take up to 6 hours for them to appear. Please refer to the screenshot for reference and continue with the next steps.
 
@@ -458,7 +463,7 @@ In this task, you will create an application rule to allow access to sports webs
 
 1. Navigate to the home page in the Azure portal, search for **IP groups (1)** and select **IP Groups (2)** from suggestions.
  
-    ![](images/a81.png)
+    ![](images/E3T5S1.png)
  
 1. Click on **+ Create** to create a IP Group.
   
@@ -473,11 +478,11 @@ In this task, you will create an application rule to allow access to sports webs
     | Name             | Enter **IpGroup (2)**                                        |
     | Region           | Select **East US (3)**                                       |
  
-     ![](images/upd-03.png)
+     ![](images/E3T5S3.png)
 
 1. On the **IP addresses** tab, enter `*` in the **IP address, range or subnet (1)** field and then click **Review + create (2)**.
  
-    ![](images/a122.png)
+    ![](images/E3T5S4.png)
  
 1. Review the Summary, and then select **Create**.
  
@@ -497,7 +502,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Select **Application rules (1)** from **Rules** section on Firewall Policy page and select **+ Add a rule collection (2)**.
  
-    ![](images/mywafppo1.png "search gateway")
+    ![](images/E3T4S3.png "search gateway")
 
 1. Under the **Add a rule collection** page, enter the details below to enable the web application in the Bastion VM:
 
@@ -517,7 +522,7 @@ In this task, you will create an application rule to allow access to sports webs
         - Destination: Enter `www.news18.com`
     - Click on **Add (7)**
  
-        ![](images/a141.jpg "search gateway")
+        ![](images/E3T5S9.png "search gateway")
 
         >**Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to the next steps.
 
@@ -639,7 +644,7 @@ In this task, you will create an application rule to allow access to sports webs
      | Specify number of Public IP addresses         | **1 (2)**                                                    |
      | Subscription                                  | Select your default subscription **(3)**                     |
 
-     ![](images/upd-19.png)
+     ![](images/E3T6.2S4.png)
  
 1. On the **Security Partner Provider** tab, leave it to default and click on **Next: Review + create >**.
  
@@ -647,7 +652,7 @@ In this task, you will create an application rule to allow access to sports webs
 
 1. Review the **Summary** page and select **Create**.  
   
-    ![](images/upd-08.png)
+    ![](images/E3T6.2S6.png)
 
     >**Note**: Deployment may take up to 30 minutes to complete.
  
@@ -659,23 +664,23 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. On the Firewall Manger page, navigate to **Virtual Hubs** under **Secure your resources** section.
 
-    ![](images/infra-app-security-lab1-39.png)
+    ![](images/E3T6.3S2.png)
  
 1. Select the checkbox for **Hub-01 (1)**, click on **Manage security (2)**, and then choose **Choose another firewall policy (3)**.
 
-    ![](images/upd-32.png)
+    ![](images/E3T6.3S3.png)
 
 2. On the **Choose another firewall policy** page, select the checkbox for **Policy-01 (1)** and click **Next: Review + confirm > (2)**.
 
-    ![](images/upd-33.png)
+    ![](images/E3T6.3S4.png)
 
 3. On the next page, click **Confirm** to associate hub-01 with policy-01.
 
-    ![](images/upd-34.png)
+    ![](images/E3T6.3S5.png)
 
 4. Return to the Virtual Hubs section, click on Hub-01, and you will see that the Azure Firewall status is marked as **Secured**.
 
-    ![](images1/upd-50.png)
+    ![](images/E3T6.3S6.png)
     
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -696,3 +701,5 @@ In this exercise, you have covered the following:
 - Performed Azure Firewall Policies with the Firewall Manager
 
 ## Click on **Next >>** to proceed with next exercise.
+
+![](./images/infra-app-security-lab1-49.png)
