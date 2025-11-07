@@ -281,11 +281,11 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
 1. On the **Add a route** page, enter name as **myRoute (1)** and click on **Add a new origin group (2)**.
   
-    ![](images/a126.png)
+    ![](images/E2T5.1S9.png)
   
 1. On the **Add an origin group** pane, enter name as **myOriginGroup (1)** and click on **+ Add an origin (2)**.
   
-    ![](images/a127.png)
+    ![](images/E2T5.1S10.png)
   
 1. To add the first origin, enter **OWASP-Main (1)** as the name, select **App services (2)** as the origin type, choose **owasp-mainjump<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name, then click **Add (4)**.
   
@@ -301,7 +301,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
 1. Again, select **Add** to add a route.
   
-    ![](images/a133.png)
+    ![](images/E2T5.1S14.png)
   
 1. Select **+ Add a policy** to apply a Web Application Firewall (WAF) policy to one or more domains in the Azure Front Door profile.
   
@@ -309,7 +309,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
 1. On the **Add security policy** page, enter the name **mySecurityPolicy (1)**. Then select the **Domains (2)** you want to associate with the policy from the dropdown. For the WAF Policy, choose **Create New**, enter the policy name as **myWAFPolicy (3)**, and click **Create (4)**. Finally, select **Save (5)** to add the security policy to the endpoint configuration.
   
-     ![](images/a60-1.png)
+     ![](images/E2T5.1S16.png)
   
 1. Select **Review + create**, review the summary, and then select **Create** to deploy the Azure Front Door profile. The configuration will take a few minutes to propagate to all edge locations.
 
@@ -348,7 +348,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. Select one of your web apps, click **Stop**, and then click **Yes** to confirm.
 
-    ![](images/E2T5-2S5.png)
+    ![](images/E2T5.2S7.png)
 
 1. Switch back to your browser and select **Refresh**. You should see the same information page.
 
@@ -358,7 +358,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. Switch back to the Azure Portal, locate the other web app, and stop it.
   
-    ![](images/E2T5-2S7.png)
+    ![](images/E2T5.2S5.png)
 
 1. Switch back to your browser and select Refresh. This time, you should see an error message.
 
@@ -368,7 +368,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. Navigate to the **App Services** tab, select both of your web apps, click **Start**, and then click **Yes** to confirm.
   
-    ![](images/E2T5-3S1.png)
+    ![](images/E2T5.3S1.png)
 
 1. In a new browser tab, paste the **endpoint** you copied in the previous task.
 
@@ -406,7 +406,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
     
     - Rate limit threshold (requests): Enter **1 (5)**
   
-       ![](images/E2T5.2S7.png)
+       ![](images/E2T5.3S7.png)
  
 1. Under Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string `contoso` and `azurefd`:
   
@@ -436,13 +436,13 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. Navigate back to the website and try **refresh** in the browser, you will see a response from the website.
 
-    ![](images/a178.png)
+    ![](images/E2T5.3S12.png)
 
     >**Note:** It may take a few minutes for the rate limit policy to take effect. You can continue with other tasks and return later to test.
 
 1. After getting the response from the website, navigate back to the **myWAFpolicy** page, go to the **Overview (1)** tab, and click on **Switch to detection mode (2)**.
 
-    ![](images/E2T5-3S13.png "select gateway")
+    ![](images/E2T5.3S13.png "select gateway")
 
 
 

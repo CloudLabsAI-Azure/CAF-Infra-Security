@@ -20,7 +20,7 @@ You will be able to complete the following tasks:
 
 In this task, you will review and monitor the NSG flow logs in the Traffic Analytics.
 
-1. In the Azure portal, search for **Network Watcher** and select it.
+1. In the Azure portal, search for **Network Watcher (1)** and select **Network Watcher (2)**.
 
    ![](images/E5T1S1.png)
 
@@ -28,7 +28,7 @@ In this task, you will review and monitor the NSG flow logs in the Traffic Analy
    
    ![](images/E5T1S2.png)
       
-1. On the **Traffic Analytics** page, set the **Time interval** to **Last 30 minutes** and the **Flow log type** to **VNet**.
+1. On the **Traffic Analytics (1)** page, set the **Flow log type** to **VNet (2)**, the **Flow log subscription** to **Default subscription (3)** and then **Time interval** to **Last 30 minutes (4)** 
 
    ![](images/E5T1S3.png)
    
