@@ -39,7 +39,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
 1. From the left-side blade, select **Preview features (1)** under Settings and select **Microsoft.Network (2)** in the Provider list and click on **Apply (3)**.
 
-   ![](images/E3T1S3.png "search gateway")
+      ![](images/E3T1S3.png "search gateway")
 
 1. Now you should be able to see the **Enable Azure Firewall Structured Logs** is already registered by default.
 
@@ -701,5 +701,6 @@ In this exercise, you have covered the following:
 - Performed Azure Firewall Policies with the Firewall Manager
 
 ## Click on **Next >>** to proceed with next exercise.
+
 
 ![](./images/infra-app-security-lab1-49.png)
