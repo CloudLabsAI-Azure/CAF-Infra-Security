@@ -336,6 +336,20 @@ In this task, you will create an application rule to allow access to sports webs
 
       >**Note:** If the TLS deployment fails, please delete the **Managed Identity** and **Key Vault** from the resource group, then retry the deployment. What usually happens is that during deployment, the Key Vault and Managed Identity are created, and permissions are assigned to the Managed Identity. Occasionally, due to slight delays on Azure’s side, these permissions might take a little longer to apply, which can cause the deployment to fail. Retrying usually resolves the issue smoothly.
 
+1. Perform these steps if TLS Inspection still fails after deleting the Managed Identity and Key Vault, if its succeeded then proceed to step 17.
+
+    ![](images/Pg4T3S13.1.png)
+
+1. Once created, navigate to the Key Vault created and open it. Under Settings, go to **Access Configuration (1)** and under Permission model switch it to **Azure role-based access control (2)** and click on **Apply (3)**.
+
+    ![](images/Pg4T3S15.png)
+
+1. Return to the TLS Inspection blade in **firewallpolicy** and temporarily change the Managed Identity to **Demoidentity (1)**. Switch back to the new Managed Identity that was automatically created then click on the **Save (2)** button that appears. 
+
+    ![](images/Pg4T3S16.1.png)
+
+    ![](images/Pg4T3S16.2.png)
+
 1. Now, select **Application Rules (1)** from the **Rules** tab on the **Firewall Policy** page, then click **+ Add a rule collection (2)**.
    
     ![](images/infra-app-security-lab1-28.png "search gateway")
@@ -703,5 +717,6 @@ In this exercise, you have covered the following:
 
 
 ![](./images/infra-app-security-lab1-49.png)
+
 
 
