@@ -75,7 +75,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
-   ![](./images/upd-1.png)
+   ![](./images/env-1811.png)
  
 ## Utilizing the Split Window Feature
  
@@ -85,7 +85,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
   ![](./images/GS5-100.png)
  
@@ -111,41 +111,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
    ![](./images/GS5.png)
 
-5. If you see the pop-up **Action Required**, leave it as default and then click on **Ask later**. Next, on the **Help us protect your account** pop-up click on **Skip for now** (14 days until this is required), and then select **Next**.
-
-   ![](images/skip-for-now.png)
-
-   >**NOTE:** Do not enable MFA. Select **Ask Later**.
-
-6. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
-
-## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
-
-1. At the **"More information required"** prompt, select **Next**.
-
-1. On the **"Keep your account secure"** page, select **Next** twice.
-
-1. **Note:** If you don’t have the Microsoft Authenticator app installed on your mobile device:
-
-   - Open **Google Play Store** (Android) or **App Store** (iOS).
-   
-   - Search for **Microsoft Authenticator** and tap **Install**.
-   
-   - Open the **Microsoft Authenticator** app, select **Add account**, then choose **Work or school account**.
-
-1. A **QR code** will be displayed on your computer screen.
-
-1. In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
-
-1. After scanning, click **Next** to proceed.
-
-1. On your phone, enter the number shown on your computer screen in the Authenticator app and select **Next**.
-       
-1. If prompted to stay signed in, you can click **No**.
-
-1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
-
-   ![](images/gs1313.png)
+5. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
 ## Support Contact
  
