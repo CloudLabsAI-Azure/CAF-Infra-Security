@@ -192,7 +192,11 @@ In this task, you will test IDPS for HTTP traffic.
  
     > **Note:** If you don’t see the logs as expected, it may take up to 6 hours for them to appear. Please refer to the screenshot for reference and continue with the next steps.
  
-1. Now navigate back to the firewall policy and under **Settings (1)** select **IDPS (2)**.
+ 1. Navigate to your **FirewallVM-rg** resource group and select **firewallpolicy**.
+
+    ![](images/upd-14.png "search gateway")
+
+1. In the firewall policy, under **Settings (1)** select **IDPS (2)**.
  
    ![](images/infra-app-security-lab1-23.png "search gateway")
  
@@ -273,9 +277,13 @@ In this task, you will create an application rule to allow access to sports webs
 
       ![](images/E3T3S4.png)
  
-1. Navigate to your **FirewallVM-rg** resource group and select **FirewallVM**. 
- 
-    ![](images/upd-02.png)
+1. Now, using the search bar, search for **Virtual machines (1)** and **select (2)** from the suggestions.
+
+     ![](images/a18.png "search gateway")
+
+1. Select the **FirewallVM** from the list.
+
+     ![](images/E1T3S6.png "search gateway")
 
 1. On the **FirewallVM Virtual Machine** page, click **Connect (1)** under the **Connect** section, then select **Go to Bastion (2)**.
  

@@ -28,11 +28,11 @@ In this task, you will review and monitor the NSG flow logs in the Traffic Analy
    
    ![](images/E5T1S2.png)
       
-1. On the **Traffic Analytics (1)** page, set the **Flow log type** to **VNet (2)**, the **Flow log subscription** to **Default subscription (3)** and then **Time interval** to **Last 30 minutes (4)** 
+1. On the **Traffic Analytics (1)** page, set the **Flow log subscription** to **Default subscription (2)** ,**Flow log type** to **VNet (3)** and then **Time interval** to **Last 30 minutes (4)** 
 
    ![](images/E5T1S3.png)
    
-   > **Note: If you observe the Time interval is greyed out, click on Meanwhile, click here to see just resource data and perform the above step**.
+   > **Note:** If you observe the Time interval is greyed out, click on Meanwhile, click here to see just resource data and perform the above step.
    
    > It may take up to 30 to 60 minutes to click on **Meanwhile, click here to see just resource data and perform the above step option to come up**.
 
@@ -42,7 +42,7 @@ In this task, you will review and monitor the NSG flow logs in the Traffic Analy
 
     ![](images/081025(12).png)
 
-    > **Note: The dashboard may take up to 60-90 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and come back later and check on this**.
+    > **Note:** The dashboard may take up to 60-90 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and come back later and check on this.
            
 1. Under **Traffic Analytics**, Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **Talking to Internet (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
 
