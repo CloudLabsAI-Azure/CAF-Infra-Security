@@ -133,21 +133,19 @@ In this task, you will explore and visualize the metrics using various kinds of 
 
     ![](images/infra-app-security-lab1-43.png)
 
-1. Select **Add metric** then **Scope**.
-
-    ![](images/E4T3S2.png)
-
-1. Once you click on Scope, select **Public IP addresses (1)** from **Resources type**, then select the specific **Public IP address (2)** you want to log metrics for, and click on **Apply (3)**.
-
-     ![](images/E4T3S3.png)
-
-1. Under **Metric**, select **Inbound SYN packets to trigger DDoS mitigation** then under **Aggregation**, select type as **Count**.
+1. Under **Metric**, select **Inbound SYN packets to trigger DDoS mitigation** then under **Aggregation**, select type as **Count** and click on **blue tick (1)** to add
   
      ![](images/E4T3S4.png)
+
+1. Then select **Add metric (2)**
+
+     ![](images/E4T3S3-1.png)
 
 1. Follow the previous step to add **Inbound TCP packets to trigger DDoS mitigation** and **Inbound UDP packets to trigger DDoS mitigation**. 
 
       ![](images/E4T3S5.png)
+
+   > **Note** : The actual image may vary
       
 ## Summary
  

@@ -152,7 +152,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
  
    ![](images/image306.png "select gateway")
 
-1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
+1. To make your application more secure, navigate to your **FirewallVM-rg** resource group and select **ApplicationGateway** from the overview page of the resource group.
      
    ![rp](images/E2T3S10.png)
     
@@ -195,7 +195,7 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
 
 1. From your own machine's browser, access the application by putting in the **Application Gateway IP** that you looked up in Task 2.
    
-    >**Note:** Your browsing URL value should look like ```https://20.169.169.81/```
+    >**Note:** Your browsing URL value should look like ```http://20.169.169.81/```
 
      ![ss](images/updateimg-13.png)
 
@@ -205,7 +205,7 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
     
      ![ss](images1/updateimg-14.png)
   
-1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
+1. To make your application more secure,In the Azure portal, navigate to your **FirewallVM-rg** resource group and select **ApplicationGateway** from the overview page of the resource group.
      
     ![rp](images/E2T3S10.png)
     

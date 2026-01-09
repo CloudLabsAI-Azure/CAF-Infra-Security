@@ -35,13 +35,15 @@ In this task, you'll explore Azure Monitor and examine the resource health of va
 
    ![](images/E1T1S3.png "search gateway")
 
+   >**Note:** Sometimes It may take time to show the healthly(green bar) status of the resorces as shown. Please try to do **refresh** 
+
 1. In this, each tile represents a resource's health. The tile displays the number of instances of that resource health deployed across all selected subscriptions. 
 
    ![](images/E1T1S4.png "search gateway")
 
 1. You can click on any resource to select the resource view. The resource view helps you visualize how a resource is configured. The resource view is currently available for **Azure Application Gateway**, **Azure Firewall**, and **Bastions**. For example, for Application Gateway, you can access the resource view by selecting the Application Gateway resource name in the metrics grid view. You can do the same thing for Azure Firewall and Bastions.
 
-   ![](images/E1T1S5.png "search gateway")
+   ![](images/E1T1S5-1.png "search gateway")
 
 1. Click on the **Throughput** icon next to the location to bring up the Metrics.
    
