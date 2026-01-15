@@ -63,9 +63,9 @@ Welcome to your Infrastructure and Application Security Workshop! We've prepared
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-   ![](./images/environment-1.png)
+   ![](./images/guideee.png)
 
 ## Virtual Machine & Lab Guide
  
@@ -73,7 +73,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 ## Exploring Your Lab Resources
  
-To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
    ![](./images/env-1811.png)
  
@@ -81,13 +81,13 @@ To get a better understanding of your lab resources and credentials, navigate to
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](./images/GS8-1.png)
+   ![](./images/splittt.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
-  ![](./images/GS5-100.png)
+  ![](./images/vmrun.png)
  
 ## Let's Get Started with Azure Portal
  
@@ -99,19 +99,21 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-      ![](./images/GS3.png "Enter Email")
+      ![](./images/odlusr.png "Enter Email")
  
 3. Next, provide your password:
  
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
  
-      ![](./images/GS4.png "Enter Password")
+      ![](./images/odltap.png "Enter Password")
  
 4. If you see the pop-up **Stay Signed in?**, click **No**.
 
-   ![](./images/GS5.png)
+   ![](./images/staysign.png)
 
-5. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
+5. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe later** to skip the tour.
+
+   ![](./images/starttour.png)
 
 ## Support Contact
  
