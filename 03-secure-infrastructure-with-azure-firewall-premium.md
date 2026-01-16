@@ -292,7 +292,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Within the Bastion VM, search for **Edge (1)** and select **Microsoft Edge (2)**.
  
-    ![](images1/edg.png)
+    ![](images/edg.png)
  
 1. Navigate to the below-mentioned URL, and you can see the error **Hmmm... can't reach this page**.
  
@@ -340,7 +340,7 @@ In this task, you will create an application rule to allow access to sports webs
 
     ![](images/Pg4T3S15.png)
 
-1. Return to the TLS Inspection blade in **firewallpolicy** and temporarily change the Managed Identity to **Demoidentity (1)**. Switch back to the new Managed Identity that was automatically created then click on the **Save (2)** button that appears. 
+1. Return to the TLS Inspection blade in **firewallpolicy** and temporarily change the Managed Identity to **Demoidentity (1)**.Now switch back to the new Managed Identity that was automatically created then click on the **Save (2)** button that appears. 
 
     ![](images/Pg4T3S16.1.png)
 
@@ -390,11 +390,11 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. In the Azure portal, go to your **FirewallVM-rg** resource group and select **AzureFirewall**.
  
-     ![](images/upd-2.png)
+     ![](images/azfwslct.png)
  
 1. On the **AzureFirewall** page, select **Logs (1)** under the **Monitoring** tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)**, and then click **Run (3)** for **Application rule logs**. Make sure the mode is set to **KQL mode**.
  
-     ![](images/infra-app-security-lab1-30.png)
+     ![](images/arlq.png)
  
     > **Note:** If you don’t see the logs as expected, it may take up to 6 hours for them to appear. Please refer to the screenshot for reference and continue with the next steps.
 
@@ -458,11 +458,11 @@ In this task, you will create an application rule to allow access to sports webs
 
 1. In the Azure portal, go to your **FirewallVM-rg** resource group and select **AzureFirewall**.
 
-    ![](images/upd-2.png)
+    ![](images/azfwslct.png)
 
-1. On the **AzureFirewall** page, select **Logs (1)** under the **Monitoring** tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)**, and click **Run (3)** for **Application rule log**. Ensure the mode is set to **KQL mode** to view the query and results.
+1. On the **AzureFirewall** page, select **Logs (1)** under the **Monitoring** tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)**, and click **Run (3)** for **Application rule logs**. Ensure the mode is set to **KQL mode** to view the query and results.
 
-    ![](images/E3T4S10i.png)
+    ![](images/arlq.png)
 
      > **Note:** If you don’t see the logs as expected, it may take up to 6 hours for them to appear. Please refer to the screenshot for reference and continue with the next steps.
 
