@@ -32,7 +32,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
 1. In the Azure portal, search **DDoS protection plans (1)** and then select **DDoS protection plans (2)**.
  
-   ![](images/E4T1S1.png)
+   ![](images/ddsrch.png)
  
 1. Click on **+ Create** to create a DDoS protection plan.
  
@@ -48,13 +48,9 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
    - Region: **<inject key="Region" /> (4)**
 
-   - Click on **Next : Tags > (5)**.
+   - Click on **Review + create (5)**.
  
-     ![](images/E4T1S3.png)
- 
-1. On the **Tags** tab, leave everything to default and then click on **Review + create**.
- 
-     ![](images/E4T1S4.png)
+     ![](images/ddtag.png) 
   
 1. If the validation is passed, then click on **Create**.
 
@@ -62,13 +58,13 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
       ![](images/upd-010.png)
  
-1. Once the DDoS protection is added, you will see a notification that says **Deployment succeeded**, as shown below. Click on **Go to resource**.
+1. Once deployment is completed, click on **Go to resource**.
 
-      ![](images/E4T1S6.png)
+      ![](images/gtrdd.png)
  
 1. On the DDoS protection page, under the **Settings** tab, select **Protected resources (1)** then **VNET (2)** and click on **+ Add (3)**.
  
-      ![](images/infra-app-security-lab1-040.png)
+      ![](images/ddadd.png)
 
 1. On the **Add virtual network to DDoS plan** blade, provide the information as mentioned below,
     
@@ -80,7 +76,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
     
     - Click on **Add (4)**
    
-      ![](images/E4T1S8.png)
+      ![](images/vnetddos.png)
  
 1. Once the Protected resources are added, you will see a notification that says **Successfully updated the virtual network vnet**, as shown below.
  
@@ -88,7 +84,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
  
 1. Navigate to the home page in the Azure portal, search for **Firewalls (1)** and select **Firewalls (2)** from suggestions.
  
-    ![](images/infra-app-security-lab1-35.png)
+    ![](images/fwsrch.png)
  
 1. Navigate to **Virtual Networks** under **Secure your resources** section, and you will see that you are protected.
 
@@ -107,23 +103,23 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
 1. In the Azure portal, search **Public IP addresses (1)** and then select **Public IP addresses (2)**.
 
-    ![](images/a33.png)
+    ![](images/pipsrch.png)
 
 1. Select the **firewallIP** from the list.
 
-    ![](images/E4T2S2.png)
+    ![](images/fipe4.png)
 
 1. In the **Overview** pane, you will see **Protect IP address** on the bottom right corner, click on **Protect**.
 
-    ![](images/E4T2S3.png)
+    ![](images/proip.png)
 
 1. Once you click on **Protect**, under **Protection type**, select **IP (1)**, check **Add to existing DDoS Protection plan (2)**, choose **DDoSProtection (3)** from the dropdown, and click **Save (4)**.
 
-    ![](images/E4T2S4.png)
+    ![](images/dconfig.png)
 
 1. In the **Overview (1)** pane, select the **Properties (2)** tab. Under **DDoS protection (3)**, you will see that your public IP address is protected by **IP protection** as shown below.
 
-    ![](images/081025(10).png)
+    ![](images/dpdon.png)
     
 ## Task 3: View metrics from Public IP address
 
