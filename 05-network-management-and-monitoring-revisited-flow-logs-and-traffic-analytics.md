@@ -22,15 +22,11 @@ In this task, you will review and monitor the NSG flow logs in the Traffic Analy
 
 1. In the Azure portal, search for **Network Watcher (1)** and select **Network Watcher (2)**.
 
-   ![](images/E5T1S1.png)
+   ![](images/nwsrch.png)
 
-1. Once you're on the Network Watcher page, go to the left-hand menu under the **Monitoring** section and click on **Traffic Analytics**.
-   
-   ![](images/E5T1S2.png)
-      
-1. On the **Traffic Analytics (1)** page, set the **Flow log subscription** to **Default subscription (2)** ,**Flow log type** to **VNet (3)** and then **Time interval** to **Last 30 minutes (4)** 
+1. From the left navigation menu under the **Monitoring** section and click on **Traffic Analytics (1)**. On the **Traffic Analytics** page, set the **Flow log subscription** to **Default subscription (2)** ,**Flow log type** to **VNet (3)** and then **Time interval** to **Last 30 minutes (4)** 
 
-   ![](images/E5T1S3.png)
+   ![](images/nw30.png)
    
    > **Note:** If you observe the Time interval is greyed out, click on Meanwhile, click here to see just resource data and perform the above step.
    
@@ -46,11 +42,11 @@ In this task, you will review and monitor the NSG flow logs in the Traffic Analy
            
 1. Under **Traffic Analytics**, Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **Talking to Internet (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
 
-    ![](images/E5T1S5.png)
+    ![](images/yourenv.png)
       
 1. To visualize the traffic distribution by geography, click on **View map**. The geo-map shows the traffic distribution to a data center from countries/regions and continents communicating with it.
 
-    ![](images/E5T1S6.png)
+    ![](images/rgmap.png)
      
 1. In the **Traffic Analytics Geo Map View** page, click on the **Green** icon which indicates the Azure region, and observe the resources deployed under the region, to explore more select **More details**.
 
@@ -72,7 +68,7 @@ In this task, you will review and monitor the NSG flow logs in the Traffic Analy
      
 1. To view the analytics of traffic flows across the host, select **IP (1)**, then select **See all (2)** from **Traffic Distribution**.
 
-    ![](images/E5T1S12.png)
+    ![](images/ipall.png)
     
 1. You can observe the graph of the **Time trending chart for the top 5 talking IPs** from the **Traffic distribution across the top IPs** page.
 

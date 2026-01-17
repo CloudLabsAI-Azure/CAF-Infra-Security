@@ -26,17 +26,17 @@ You will be able to complete the following tasks:
  
 In this task, you will add a Virtual Machine as the Backend pool of the Application Gateway and also configure the Application Gateway from the firewall policy.
  
- 1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
+ 1. From the Azure **Home** page, search for **Application gateways (1)** in the search bar and select **Application gateways (2)**.
  
-      ![](images/E2T1S1.png "search gateway")
+      ![](images/agsrch.png "search gateway")
     
  1. Select your **Application Gateway**.
 
-      ![](images/E2T1S2.png "select gateway")
+      ![](images/agslct.png "select gateway")
       
  1. On the Application gateway page, click on the **Backend pools (1)** under **Settings** and then select **AGBackendtarget (2)**.
 
-     ![](images/E2T1S3.png)
+     ![](images/agbck.png)
      
  1. On the **Edit backend pool** page, follow the instructions below:
 
@@ -46,7 +46,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
 
     - Click on **Save (3)**.
 
-      ![](images/updateimg-12.png)
+      ![](images/ebp.png)
     
 1. Once the Backend pools are saved, you will see the notification that says **Deployment succeeded**.
 
@@ -54,7 +54,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
 
 1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall policies (WAF) (2)**.
 
-   ![](images/E2T1S6.png)
+   ![](images/afpsrch.png)
  
 1. On the **Network security | Web Application Firewall** page, click on **Firewall policy**.
 
@@ -72,7 +72,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
     
     - Click on **Add (3)**.
 
-      ![](images1/associateappgateway.png)
+      ![](images/assag.png)
 
 1. Once the Application Gateway are saved, you will see the notification that says **Updated the Application Gateway**.
 
@@ -82,49 +82,49 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
  
 In this task, you will access the application by going through the Application Gateway that you just configured.
 
-1.  In the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
+1.  In the Azure **Home** page, in the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
 
-    ![](images/E2T1S1.png "search gateway")
+    ![](images/agsrch.png "search gateway")
  
 1. Select your **Application Gateway**.
  
-    ![](images/E2T1S2.png)
+    ![](images/agslct.png)
  
 1. Select the **Frontend public IP address** of the application gateway.
  
-      ![](images/E2T2S3.png "select gateway")
+      ![](images/slfip.png "select gateway")
 
 1.  Copy the **IP address** and save it to Notepad for later use.
 
-     ![](images/E2T2S4.png )
+     ![](images/ipcp.png )
           
 1. Now, to test the application copy and paste the Frontend public IP address of **Application Gateway** into a new browser tab that you copied in previous step.
 
-   ![ss](images/updateimg-13.png)
+   ![ss](images/cpiptest.png)
        
 ## Task 3: Application Gateway WAF Custom Rule to block IP
  
 In this task, you will block access from the Lab VM to the Jump VM by configuring a Firewall Policy custom rule. The rule will deny access to the web application by adding the Lab VM’s Public IP in the deny rule.
  
-1. In the Azure portal, search for **Virtual machines (1)** and select it from the results **(2)**.
+1. In the Azure portal, search for **Virtual machines (1)** and select **Virtual machines (2)**  from the results.
 
-    ![](images/a156.png "select gateway")
+    ![](images/vmsrch.png "select gateway")
  
 1. On the **Compute infrastructure | Virtual machines page**, select **labvm-<inject key="Deployment ID" enableCopy="false"/>**.
 
-    ![](images/E2T3S2.png "select gateway")
+    ![](images/lbvmslct.png "select gateway")
 
 1. Copy the **Public IP address** and save it to Notepad for later use.
 
-    ![](images/E2T3S3.png "select gateway")
+    ![](images/lbvmipcp.png "select gateway")
 
 1. In the Azure Portal Search **WAF (1)** and then select **Web Application Firewall policies (WAF) (2)**.
  
-   ![](images/image302.png "select gateway")
+   ![](images/wafsrch.png "select gateway")
  
-1. On the Web Application Firewall policies (WAF) page, select **firewallpolicy (1)**.
+1. On the Web Application Firewall policies (WAF) page, select **firewallpolicy**.
 
-    ![](images/E2T3S5.png "select gateway")
+    ![](images/fwp.png "select gateway")
 
 1. Select **Custom rules (1)** under the **Settings** section, then click on **+ Add custom rule (2)**.
  
@@ -142,11 +142,11 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
     
     - Click on **Add (5)**.
  
-      ![](images/infra-app-security-lab1-5.png "select gateway")
+      ![](images/acr.png "select gateway")
  
 1. Click on **Save**.
  
-   ![](images/081025(6).png "select gateway")
+   ![](images/wafcr.png "select gateway")
 
 1. Once the custom rule is created, you will see the notification that says **Successfully updated the WAF policy**, as shown below.
  
@@ -154,7 +154,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
 1. To make your application more secure, navigate to your **FirewallVM-rg** resource group and select **ApplicationGateway** from the overview page of the resource group.
      
-   ![rp](images/E2T3S10.png)
+   ![rp](images/frgag.png)
     
 1. Under the **Application gateway** page, follow the details below:
 
@@ -162,23 +162,23 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
      
     - Click on **firewallpolicy (2)** under **Associated web application firewall policy**.  
   
-      ![config](images/infra-app-security-lab1-7.png)
+      ![config](images/agfwp.png)
  
 1. On the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
 
    >**Note:** Wait for the firewall policy to get updated before proceeding to the next step.
  
-    ![](images/infra-app-security-lab1-8.png)
+    ![](images/spm.png)
 
 1. Navigate back to the browser tab where you accessed the application gateway website and **refresh** the tab; you will no longer be able to see the website.
 
-   ![](images/a160.png "select gateway")
+   ![](images/upa160.png "select gateway")
 
    >**Note:** This may take a few minutes to take effect. 
 
 1. Navigate back to **firewallpolicy** page, go to the **Overview (1)** blade and click on **Switch to detection mode (2)**.
 
-   ![](images/infra-app-security-lab1-9.png "select gateway")
+   ![](images/upinfra-app-security-lab1-9.png "select gateway")
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -207,7 +207,7 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
   
 1. To make your application more secure,In the Azure portal, navigate to your **FirewallVM-rg** resource group and select **ApplicationGateway** from the overview page of the resource group.
      
-    ![rp](images/E2T3S10.png)
+    ![rp](images/frgag.png)
     
 1. On the **Application gateway** page, follow the details below:
 
@@ -215,17 +215,17 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
      
     - Click on **firewallpolicy (2)** under **Associated web application firewall policy**.  
   
-      ![config](images/E2T3S11.png)
+      ![config](images/agfwp.png)
  
 1. On the **firewallpolicy** page, go to the **Overview (1)** blade and click on **Switch to prevention mode (2)**.
 
      >**Note:** Wait for the firewall policy to get updated before proceeding to the next step.
 
-    ![](images/E2T4S5.png)
+    ![](images/spm.png)
     
 1. Now, navigate back to the tab where you browsed the IP Address and refresh the page. You can observe the **403 Forbidden error**.
     
-    ![server error](images1/403.png)
+    ![server error](images/error2.png)
 
      >**Note:** This may take a few minutes to take effect.
 
@@ -241,7 +241,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
 1. In the Azure portal, search for **Front Doors (1)** and select **Front Doors (2)** from the results.
   
-    ![](images/infra-app-security-lab1-10.png)
+    ![](images/fdsrch.png)
   
 1. Select **+ Create** to create a Front.
   
@@ -249,31 +249,27 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
 
 1. On the **Compare offerings** page, select **Custom create (1)**. Then select **Continue to create a Front Door (2)**.
   
-    ![](images/infra-app-security-lab1-12.png)
+    ![](images/compoff.png)
   
-1. On the **Basics** tab, enter or select the following information, and then select **Next: Secret > (5)**.
+1. On the **Basics** tab, enter or select the following information, and then select **Next: Secret > (6)**.
   
     | **Setting**                 | **Value**                                                     |
     | ----------------------------| ------------------------------------------------------------  |
-    | Subscription                | Select your subscription (1).                                     |
+    | Subscription                | Select your subscription **(1)**                                     |
     | Resource group              | Select the resource group **FirewallVM-rg (2)**                       |
-    | Resource group location     | <inject key="Region" />                                |
-    | Name                        | Enter **Webapp-Contoso-AFD (3)**                                  |
-    | Tier                        | Select **Premium (4)**                                            |
+    | Resource group location     | **<inject key="Region" />** **(3)**                                |
+    | Name                        | Enter **Webapp-Contoso-AFD (4)**                                  |
+    | Tier                        | Select **Premium (5)**                                            |
   
-    ![](images/infra-app-security-lab1-13.png)
+    ![](images/nxtsec.png)
   
 1. On the **Secrets** tab, Leave it default as same and click on **Next: Endpoint >**.
   
     ![](images/a56.png)
   
-1. On the **Endpoint** tab, select **Add an endpoint (1)**.
+1. On the **Endpoint** tab, select **Add an endpoint (1)**. Name the endpoint as **contoso-frontend (2)** and click on **Add (3)** to add the endpoint.
 
-    ![](images/E2T5.1S6.png)
-
-1. Now, name the endpoint as **contoso-frontend (1)** and click on **Add (2)** to add the endpoint.
-  
-    ![](images/infra-app-security-lab1-14.png)
+    ![](images/upaddep.png)
   
 1. On the same page, select **+ Add a route** to configure routing to your Web App origin.
   
@@ -281,43 +277,43 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
 1. On the **Add a route** page, enter name as **myRoute (1)** and click on **Add a new origin group (2)**.
   
-    ![](images/E2T5.1S9.png)
+    ![](images/newog.png)
   
 1. On the **Add an origin group** pane, enter name as **myOriginGroup (1)** and click on **+ Add an origin (2)**.
   
-    ![](images/E2T5.1S10.png)
+    ![](images/myog.png)
   
 1. To add the first origin, enter **OWASP-Main (1)** as the name, select **App services (2)** as the origin type, choose **owasp-mainjump<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name, then click **Add (4)**.
   
-    ![](images/E2T5.1S11.png)
+    ![](images/owmain.png)
 
-1. To add the second origin, enter **OWASP-Stage (1)** as the name, select **App services (2)** as the origin type, choose **owasp-stage<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name, then click **Add (4)**.
+1. To add the second origin, click on **+ Add an origin** again and enter **OWASP-Stage (1)** as the name, select **App services (2)** as the origin type, choose **owasp-stage<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name, then click **Add (4)**.
   
-    ![](images/E2T5.1S12.png)
+    ![](images/owstage.png)
   
 1. Click on **Add**.
   
-    ![](images/E2T5.1S13.png)
+    ![](images/upogconfig.png)
   
 1. Again, select **Add** to add a route.
   
-    ![](images/E2T5.1S14.png)
+    ![](images/addagain.png)
   
 1. Select **+ Add a policy** to apply a Web Application Firewall (WAF) policy to one or more domains in the Azure Front Door profile.
   
     ![](images/E2T5.1S15.png)
   
-1. On the **Add security policy** page, enter the name **mySecurityPolicy (1)**. Then select the **Domains (2)** you want to associate with the policy from the dropdown. For the WAF Policy, choose **Create New**, enter the policy name as **myWAFPolicy (3)**, and click **Create (4)**. Finally, select **Save (5)** to add the security policy to the endpoint configuration.
+1. On the **Add security policy** page, enter the name **mySecurityPolicy (1)**. Then select the **Domains (2)** you want to associate with the policy from the dropdown. For the WAF Policy, choose **Create New (3)**, enter the policy name as **myWAFPolicy (4)**, and click **Create (5)**. Finally, select **Save (6)** to add the security policy to the endpoint configuration.
   
-     ![](images/E2T5.1S16.png)
+     ![](images/spsave.png)
   
 1. Select **Review + create**, review the summary, and then select **Create** to deploy the Azure Front Door profile. The configuration will take a few minutes to propagate to all edge locations.
 
     > **Note:** Wait for the deployment to complete, which may take a few minutes, before proceeding to the next task.
 
-    ![](images/a61.png)
+    ![](images/fdrcc.png)
    
-    ![](images/upd-022.png)
+    ![](images/fdcr.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -330,51 +326,51 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
 Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
   
-1. On the Front Door resource, go to the **Overview (1)** blade and locate the endpoint hostname created for your endpoint, for example, **contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net**. Then, **copy (2)** this FQDN.
+1. On your Front Door resource, go to the **Overview** blade and locate the endpoint hostname created for your endpoint, (for example, **contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net**) and **copy** this FQDN.
   
-    ![](images/E2T5-2S1.png)
+    ![](images/afdeh.png)
     
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
   
-    ![](images/a67.png)
+    ![](images/upa67.png)
    
     > **Note:** The application might take around 5 minutes to reflect. You can continue with the next task and come back later to refresh the page to see the changes.
    
 1. To test instant global failover in action, follow these steps (**Step 3 to Step 8 are optional**):
 
-1. Navigate to the Azure portal, search for, and select **App Services**.
+1. Navigate to the Azure portal, search for **App Services (1)**, and select **App Services (2)**.
   
-    ![](images/a46.png)
+    ![](images/assrch.png)
 
 1. Select one of your web apps, click **Stop**, and then click **Yes** to confirm.
 
-    ![](images/E2T5.2S7.png)
+    ![](images/stgstp.png)
 
 1. Switch back to your browser and select **Refresh**. You should see the same information page.
 
-    ![](images/a67.png)
+    ![](images/upa67.png)
     
     > **Note:** There may be a delay while the web app stops. If you see an error page in your browser, simply refresh the page.
   
 1. Switch back to the Azure Portal, locate the other web app, and stop it.
   
-    ![](images/E2T5.2S5.png)
+    ![](images/mainstp.png)
 
 1. Switch back to your browser and select Refresh. This time, you should see an error message.
 
-    ![](images/a70.png)
+    ![](images/upa70.png)
 
 ### Task 5.3: Create a Rate Limit Rule
   
 1. Navigate to the **App Services** tab, select both of your web apps, click **Start**, and then click **Yes** to confirm.
   
-    ![](images/E2T5.3S1.png)
+    ![](images/upE2T5.3S1.png)
 
 1. In a new browser tab, paste the **endpoint** you copied in the previous task.
 
     ![](images/OSwap.png)
   
-    ![](images/a67.png)
+    ![](images/upa67.png)
   
 1. Click on the **magnifying glass** icon in the top right corner of the website to open the search.
   
@@ -382,13 +378,13 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. Type any keyword (e.g., **apple**) into the search box and observe the response from the website. Since the site uses JSON, try refreshing the browser to repeat the search. This time, you will not see any response message as before.
   
-    ![](images/a73.png)
+    ![](images/upa73.png)
   
-    ![](images/a74.png)  
+    ![](images/upa74.png)  
   
 1. In the Azure portal, search for **myWAFPolicy (1)** and select it from the results **(2)**.
   
-    ![](images/a79.png)
+    ![](images/mwafsrch.png)
   
 1. On the **myWAFPolicy** page, under **Settings**, select **Custom rules (1)**, then click **+ Add custom rule (2)**.
   
@@ -406,23 +402,23 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
     
     - Rate limit threshold (requests): Enter **1 (5)**
   
-       ![](images/E2T5.3S7.png)
+       ![](images/rlr1.png)
  
 1. Under Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string `contoso` and `azurefd`:
   
-    - Match type: Select **String**.
+    - Match type: Select **String (1)**.
     
-    - Match variable: Select **RequestUri**
+    - Match variable: Select **RequestUri (2)**
     
-    - Match values: Enter **contoso** and **azurefd**
+    - Match values: Enter **contoso** and **azurefd** **(3)**
     
-    - Click on **Add**.
+    - Click on **Add (4)**.
       
-       ![](images/E2T5.2S8.png)
+       ![](images/rlr2.png)
   
 1. Select **Save**.
   
-    ![](images/E2T5.3S9.png)
+    ![](images/rlrsave.png)
 
 1. Return to the **Overview** page of **myWAFPolicy**, then select **Switch to prevention mode** to update the policy's operating mode.
 
@@ -432,7 +428,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. On the **myWAFPolicy** page, under **Settings**, click **Policy settings (1)**. Notice the block response status code is set to **403 (2)**. Enter **This is a rate limit test (3)** under the block response body and click **Save (4)**.
   
-    ![](images/E2T5.2S11.png)    
+    ![](images/wafpolup.png)    
   
 1. Navigate back to the website and try **refresh** in the browser, you will see a response from the website.
 
@@ -442,7 +438,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. After getting the response from the website, navigate back to the **myWAFpolicy** page, go to the **Overview (1)** tab, and click on **Switch to detection mode (2)**.
 
-    ![](images/E2T5.3S13.png "select gateway")
+    ![](images/sdm.png "select gateway")
 
 
 

@@ -23,19 +23,19 @@ You will be able to complete the following tasks:
 
 In this task, you'll explore Azure Monitor and examine the resource health of various deployed resources. 
 
-1. Navigate to the Azure portal. Using the search bar, search for **Monitor (1)** and **select (2)** from the suggestions.
+1. Navigate to the Azure portal. Using the search bar, search for **Monitor (1)** and select **Monitor (2)** from the suggestions.
 
-   ![](images/a3.png)
+   ![](images/monisrch.png)
 
-1. From the sidebar, select **Networks** from Insights.
+1. From the sidebar, expand **Insights (1)** and select **Networks (2)**.
 
-   ![](images/E1T1S2.png "search gateway")
+   ![](images/innet.png "search gateway")
    
 1. On the **Network health** tab, you can customize the resource health and alerts view using filters such as **Subscription**, **Resource Group**, and **Type**. You can also use the search box to find resources and their associated resources. For example, a public IP may be associated with an application gateway. A search for the public IP's DNS name will return both the public IP and the associated application gateway.
 
    ![](images/E1T1S3.png "search gateway")
 
-   >**Note:** Sometimes It may take time to show the healthly(green bar) status of the resorces as shown. Please try to do **refresh** 
+   >**Note:** Sometimes It may take time to show the healthly(green bar) status of the resorces as shown. Please try to do **refresh**. 
 
 1. In this, each tile represents a resource's health. The tile displays the number of instances of that resource health deployed across all selected subscriptions. 
 
@@ -57,61 +57,49 @@ In this task, you'll explore Azure Monitor and examine the resource health of va
 
  In this task, you'll view resources in a Microsoft Azure virtual network and the relationships between the resources.
 
-1. Navigate to the Azure portal. Using the search bar, search for **Network Watcher (1)** and **select (2)** from the suggestions.
+1. Navigate to the Azure portal. Using the search bar, search for **Network Watcher (1)** and select **Network Watcher  (2)** from the suggestions.
 
-   ![](images/cafinfa1.jpg)
+   ![](images/nwsrch.png)
 
-1. From the sidebar, select **Topology** from Monitoring.
+1. From the sidebar, expand **Monitoring (1)**, select **Topology (2)**. On the **Topology** page click **Scope (3)**. Under the **Select Scope** pane, choose the **All subscriptions selected** **(4)** for Subscriptions, **All resource groups selected** **(5)** for Resource Groups, and **<inject key="Region" />** **(6)** for the Locations and then click on **Save (7)**.
 
-   ![](images/infra-app-security-lab1-1.png "search gateway")
+   ![](./images/nwt.png)
 
-1. On the **Topology** page, click on the **Scope** **(1)**.
+1. Hover the mouse on the **location pointer (1)** inside **Geo Map** and then click **Expand (2)** to see the topology.
 
-   ![](./images/infra-app-security-lab1-2.png)
-
-1. Under the **Select Scope** pane, choose the **All subscriptions selected** **(1)** for Subscriptions, **All resource groups selected** **(2)** for Resource Groups, and **<inject key="Region" />** **(3)** for the Locations and then click on **Save (4)**.
-
-   ![](./images/081025(1).png)
-
-1. Hover the mouse on the location pointer inside **Geo Map** and then click **Expand** to see the topology.
-
-   ![](./images/E1T2S5.png)
+   ![](./images/expnd.png)
 
 1. Now, you'll be able to **Visualize (1)** the topology. You can explore the different connections to understand how different resources, such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
 
-   ![](images/E1T2S6.png "search gateway")
+   ![](images/dtopo.png "search gateway")
 
 ## Task 3: Secure Access via Bastion Host
 
 In this task, you'll learn how to access an Azure virtual machine using the Azure Bastion service.
 
-1. Navigate to the Azure portal. Using the search bar, search for **Virtual networks (1)** and **select (2)** from the suggestions.
+1. Navigate to the Azure portal. Using the search bar, search for **Virtual networks (1)** and select **Virtual networks (2)** from the suggestions.
 
-   ![](images/a14.png "search gateway")
+   ![](images/vnsrch.png "search gateway")
 
 1. Select the **vnet** from the list.
 
-   ![](images/E1T3S2.png "search gateway")
+   ![](images/vnetlist.png "search gateway")
 
-1. From the sidebar, select **Subnets** from Settings.
+1. From the sidebar, expand **Settings (1)** and select **Subnets (2)**. You will see that **AzureBastionSubnet (3)** is already present in the subnets. If you want to see the subnet configuration, then you can click on the **AzureBastionSubnet** subnet and **explore (4)** this.
    
-   ![](images/E1T3S3.png "search gateway")
+   ![](images/abs.png "search gateway")
 
-1. You will see that **AzureBastionSubnet** is already present in the subnets. If you want to see the subnet configuration, then you can click on the **AzureBastionSubnet** subnet and explore this.
+1. Now, using the search bar, search for **Virtual machines (1)** and select **Virtual machines (2)** from the suggestions.
 
-   ![](images/E1T3S4.png "search gateway")
-
-1. Now, using the search bar, search for **Virtual machines (1)** and **select (2)** from the suggestions.
-
-   ![](images/a18.png "search gateway")
+   ![](images/vmsrch.png "search gateway")
 
 1. Select the **FirewallVM** from the list.
 
-   ![](images/E1T3S6.png "search gateway")
+   ![](images/fwvm.png "search gateway")
 
-1. On the Virtual Machine page, click on **Connect (1)** under **Connect** section and then click on **Go to Bastion (2)**.
+1. On the Virtual Machine page, expand **Connect (1)** section and then click on **Connect (2)** and click on **Go to Bastion (3)**.
  
-   ![](images/infra-app-security-lab1-3.png)
+   ![](images/gtb.png)
  
 1. On the Bastion page, follow the instructions below to connect to the Virtual Machine using Bastion:
 
@@ -123,7 +111,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
     
     - Click on **Connect (4)**
  
-      ![](images/update-6.png)
+      ![](images/conbast.png)
 
       >**Note:** If the Connection is blocked by the browser, click on the **Pop-up (1)** button, select **Always allow pop-ups and redirects from https://portal.azure.com (2)** and then click on **Done (3)**.
 
@@ -141,29 +129,29 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 In this task, you will create Virtual network flow logs and these configurations are used in Exercise 5, which reuses the Virtual network Flow Logs, Traffic Analytics setup, Azure Firewall, and other network resources from Exercise 1 to analyze collected traffic data. Otherwise, it may take 30–40 minutes for data to appear in Traffic Analytics.
 
-1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and **select (2)** from the suggestions.
+1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and select **Resource groups (2)** from the suggestions.
 
-    ![](images/cafinfra5.jpg)
+    ![](images/rgsrch.png)
 
 1. Select the **FirewallVM-rg** from the list.
 
-    ![](images/E1T4S2.png)
+    ![](images/fvrg.png)
 
 1. From the list of resources, select the Network Security Group named **FirewallVM-nsg**.
 
-    ![](images/E1T4S3.png)
+    ![](images/fvnsg.png)
 
 1. Under **Monitoring** section, select **NSG flow logs (1)** and Click on **+ Create (2)** button.
 
-    ![](images/E1T4S4.png)
+    ![](images/nflcr.png)
 
 1. In the Create a flow log page, select the **default subscription (1)**, **Virtual network (2)** as Flow log type, select dropdown button beside **+ Select target resource (3)** then choose **Virtual network (4)** as a Select target resource.
 
-    ![](images/infra-app-security-lab1-44.png)
+    ![](images/flwtyp.png)
 
 1. In the **Select Virtual network** page, select **vnet** **(1)** and click on **Confirm selection (2)**.
 
-    ![](images/infra-app-security-lab1-45.png)
+    ![](images/csel.png)
 
 1. For the Instance details, provide the following details and click on **Next: Analytics > (4)**
 
@@ -173,33 +161,33 @@ In this task, you will create Virtual network flow logs and these configurations
 
    - **Retention (days):** **30 (3)**
 
-       ![](images/infra-app-security-lab1-46.png)  
+       ![](images/nextana.png)  
    
 1. Under the **Analytics** tab, check the box to **Enable traffic analytics (1)**, select **Every 10 mins (2)** under the **Traffic analytics processing interval** and click **Review + create (3)**.
 
-    ![create](images/infra-app-security-lab1-47.png)
+    ![create](images/flrc.png)
 
 1. On the Review + create tab, review the summary and click on **Create** button.
 
    >**Note:** The deployment might take a few minutes to complete. Wait till the deployment is completed before proceeding to the next step.
 
-   ![](images/infra-app-security-lab1-48.png)  
+   ![](images/flrcc.png)  
 
-1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and **select (2)** from the suggestions.
+1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and select **Resource groups (2)** from the suggestions.
 
-    ![](images/E1T4S10.png)
+    ![](images/rgsrch.png)
 
 1. Select the **FirewallVM-rg** from the list.
 
-    ![](images/E1T4S2.png)
+    ![](images/fvrg.png)
 
 1. From the list of resources, select the Network security group named **FirewallVM-nsg**.
 
-    ![](images/E1T4S3.png)
+    ![](images/fvnsg.png)
 
 1. From the sidebar, select **Diagnostic settings (1)** under monitoring and click on **+ Add diagnostic setting (2)**.
 
-    ![](images/E1T4S13.png)
+    ![](images/ads.png)
 
 1. In the Diagnostic settings page, provide the following details.
 
@@ -209,7 +197,7 @@ In this task, you will create Virtual network flow logs and these configurations
 
    - **Destination details:** Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox, and click on **Save (5)**. Make sure the default subscription is selected for subscription and **nsglogs<inject key="DeploymentID" enableCopy="false" />** for the storage account.
 
-      ![](images/E1T4S15.png)
+      ![](images/dset.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
