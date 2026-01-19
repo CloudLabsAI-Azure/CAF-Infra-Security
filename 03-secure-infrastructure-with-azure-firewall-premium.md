@@ -271,11 +271,11 @@ In this task, you will create an application rule to allow access to sports webs
 
 1. Select the **FirewallVM** from the list.
 
-   ![](images/fwvm.png "search gateway")
+     ![](images/fwvm.png "search gateway")
 
 1. On the Virtual Machine page, expand **Connect (1)** section and then click on **Connect (2)** and click on **Go to Bastion (3)**.
  
-   ![](images/gtb.png)
+     ![](images/gtb.png)
  
 1. On the Bastion page, follow the instructions below to connect to the Virtual Machine using Bastion:
  
